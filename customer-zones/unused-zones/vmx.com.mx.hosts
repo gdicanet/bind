@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+vmx.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100921 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	189.169.68.17
+			MX	1 mail.vmx.com.mx.
+$ORIGIN vmx.com.mx.
+ftp			A	189.169.68.17
+mail			A	189.169.68.17
+pop3			A	189.169.68.17
+smtp			A	189.169.68.17
+webmail			A	189.169.68.17
+webmail2		A	189.169.68.17
+www			A	189.169.68.17

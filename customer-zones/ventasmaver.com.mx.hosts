@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+ventasmaver.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100909 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.38
+			MX	1 mail.ventasmaver.com.mx.
+$ORIGIN ventasmaver.com.mx.
+ftp			A	200.76.101.34
+mail			A	201.151.179.38
+pop3			A	201.151.179.38
+smtp			A	201.151.179.38
+webmail			A	201.151.179.38
+webmail2		A	201.151.179.38
+www			A	201.151.179.38

@@ -1,0 +1,24 @@
+$TTL 300	; 5 minutes
+nutragold.com.mx.		IN SOA	ns1.gdlicanet.net.mx. hostmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+nutragold.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+nutragold.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; La parte web
+nutragold.com.mx.		IN	A	201.151.179.38
+www.nutragold.com.mx.		IN	CNAME	nutragold.com.mx.
+
+; Correo
+nutragold.com.mx.		IN	MX	10 smtp.nutragold.com.mx.
+smtp.nutragold.com.mx.		IN	A	201.151.179.38
+pop3.nutragold.com.mx.		IN	A	201.151.179.38
+mail.nutragold.com.mx.		IN	CNAME	smtp.nutragold.com.mx.
+pop.nutragold.com.mx.		IN	CNAME	pop3.nutragold.com.mx.
+imap.nutragold.com.mx.		IN	CNAME	pop3.nutragold.com.mx.
+webmail.nutragold.com.mx.	IN	A	201.151.179.38
+ftp.nutragold.com.mx.		IN	A	201.151.179.38

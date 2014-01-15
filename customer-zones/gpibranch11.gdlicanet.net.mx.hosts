@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+gpibranch11.gdlicanet.net.mx IN	SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101211 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.143.255.93
+			MX	1 mail.gpibranch11.gdlicanet.net.mx.
+$ORIGIN gpibranch11.gdlicanet.net.mx.
+ftp			A	200.76.101.34
+mail			A	201.143.255.93
+pop3			A	201.143.255.93
+smtp			A	201.143.255.93
+webmail			A	201.143.255.93
+webmail2		A	201.143.255.93
+www			A	201.143.255.93

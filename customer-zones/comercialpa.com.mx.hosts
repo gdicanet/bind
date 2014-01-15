@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+comercialpa.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2011000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+comercialpa.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+comercialpa.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+comercialpa.com.mx.			IN	A		201.151.179.5
+www.comercialpa.com.mx.		IN	CNAME	comercialpa.com.mx.
+ftp.comercialpa.com.mx.		IN	A		201.151.179.5
+
+; Gestión correo
+comercialpa.com.mx.				IN	MX		10 smtp.comercialpa.com.mx.
+mail.comercialpa.com.mx.		IN	CNAME	smtp.comercialpa.com.mx.
+smtp.comercialpa.com.mx.		IN	A		201.151.179.5
+pop3.comercialpa.com.mx.		IN	A		201.151.179.6
+pop.comercialpa.com.mx.			IN	CNAME	pop3.comercialpa.com.mx.
+imap.comercialpa.com.mx.		IN	CNAME	pop3.comercialpa.com.mx.
+webmail.comercialpa.com.mx.		IN	A		201.151.179.5
+

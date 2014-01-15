@@ -1,0 +1,20 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+enlacedf.freseniuskabi.com.mx IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000006 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.66.70.130
+			MX	1 smtp.enlacedf.freseniuskabi.com.mx.
+$ORIGIN enlacedf.freseniuskabi.com.mx.
+ftp			A	192.168.1.178
+mail			A	192.168.1.178
+pop3			A	192.168.1.178
+smtp			A	192.168.1.178
+webmail			A	192.168.1.178
+www			A	192.168.1.178

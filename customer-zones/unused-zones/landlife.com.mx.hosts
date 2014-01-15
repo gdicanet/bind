@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+landlife.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100911 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.158.149.50
+			MX	1 mail.landlife.com.mx.
+
+$ORIGIN landlife.com.mx.
+ftp			A	201.158.149.50
+imap			A	201.158.149.50
+mail			A	201.158.149.50
+pop3			A	201.158.149.50
+smtp			A	201.158.149.50
+webmail			A	201.158.149.50
+webmail2		A	201.158.149.50
+www			A	201.158.149.50

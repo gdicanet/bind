@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+fashionandstyle.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+fashionandstyle.com.mx.				IN	NS	ns1.gdlicanet.net.mx.
+fashionandstyle.com.mx.				IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+fashionandstyle.com.mx.				IN	A		201.151.179.17
+www.fashionandstyle.com.mx.			IN	CNAME	fashionandstyle.com.mx.
+ftp.fashionandstyle.com.mx.			IN	A		201.151.179.17
+
+; Gestión del correo
+fashionandstyle.com.mx.					IN	MX		10 smtp.fashionandstyle.com.mx.
+mail.fashionandstyle.com.mx.			IN	CNAME	smtp.fashionandstyle.com.mx.
+smtp.fashionandstyle.com.mx.			IN	A		201.151.179.17
+pop3.fashionandstyle.com.mx.			IN	A		201.151.179.17
+pop.fashionandstyle.com.mx.				IN	CNAME	pop3.fashionandstyle.com.mx.
+imap.fashionandstyle.com.mx.			IN	CNAME	pop3.fashionandstyle.com.mx.
+webmail.fashionandstyle.com.mx.			IN	A		201.151.179.17
+

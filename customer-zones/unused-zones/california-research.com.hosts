@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+california-research.com.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+california-research.com.		IN	NS	ns1.gdlicanet.net.mx.
+california-research.com.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+california-research.com.		IN	A		201.151.179.17
+www.california-research.com.	IN	CNAME	california-research.com.
+ftp.california-research.com.	IN	A		201.151.179.17
+
+; Gestión del correo
+california-research.com.			IN	MX		10 smtp.california-research.com.
+mail.california-research.com.		IN	CNAME	smtp.california-research.com.
+smtp.california-research.com.		IN	A		201.151.179.17
+pop3.california-research.com.		IN	A		201.151.179.17
+pop.california-research.com.		IN	CNAME	pop3.california-research.com.
+imap.california-research.com.		IN	CNAME	pop3.california-research.com.
+webmail.california-research.com.	IN	A		201.151.179.17
+

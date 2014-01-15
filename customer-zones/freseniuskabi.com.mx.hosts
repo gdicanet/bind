@@ -1,0 +1,111 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+freseniuskabi.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000308 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.27
+			MX	1 mail.freseniuskabi.com.mx.
+$ORIGIN freseniuskabi.com.mx.
+almacen-gdl		A	187.194.192.99
+			MX	1 mail.almacen-gdl
+$ORIGIN almacen-gdl.freseniuskabi.com.mx.
+mail			A	187.194.220.38
+pop3			A	187.194.220.38
+smtp			A	187.194.220.38
+webmail			A	187.194.220.38
+webmail2		A	189.161.155.127
+www			A	187.175.4.194
+$ORIGIN freseniuskabi.com.mx.
+dante			A	200.66.70.130
+			MX	1 mail.dante
+$ORIGIN dante.freseniuskabi.com.mx.
+mail			A	200.66.70.130
+pop3			A	200.66.70.130
+smtp			A	200.66.70.130
+webmail			A	200.66.70.130
+webmail2		A	200.66.70.130
+www			A	200.66.70.130
+$ORIGIN freseniuskabi.com.mx.
+enlace1			A	201.151.179.27
+			MX	1 mail.enlace1
+$ORIGIN enlace1.freseniuskabi.com.mx.
+ftp			A	201.151.179.27
+mail			A	201.151.179.27
+pop3			A	201.151.179.27
+smtp			A	201.151.179.27
+webmail			A	201.151.179.27
+webmail2		A	201.151.179.27
+www			A	201.151.179.27
+$ORIGIN freseniuskabi.com.mx.
+enlace2			A	187.133.25.181
+			MX	1 mail.enlace2
+$ORIGIN enlace2.freseniuskabi.com.mx.
+ftp			A	189.169.253.211
+mail			A	192.168.1.65
+pop3			A	192.168.1.65
+smtp			A	192.168.1.65
+webmail			A	192.168.1.65
+webmail2		A	189.169.128.28
+www			A	189.169.128.28
+$ORIGIN freseniuskabi.com.mx.
+enlacedf		A	192.168.1.178
+			MX	1 mail.enlacedf
+$ORIGIN enlacedf.freseniuskabi.com.mx.
+mail			A	200.66.70.130
+pop3			A	200.66.70.130
+smtp			A	200.66.70.130
+webmail			A	200.66.70.130
+webmail2		A	200.66.70.130
+www			A	200.66.70.130
+$ORIGIN freseniuskabi.com.mx.
+ftp			A	201.151.179.27
+mail			A	201.151.179.27
+meeting			A	201.151.179.28
+			MX	1 mail.meeting
+$ORIGIN meeting.freseniuskabi.com.mx.
+mail			A	201.151.179.28
+pop3			A	201.151.179.28
+smtp			A	201.151.179.28
+webmail			A	201.151.179.28
+www			A	201.151.179.28
+$ORIGIN freseniuskabi.com.mx.
+mexico			A	192.168.1.178
+$ORIGIN mexico.freseniuskabi.com.mx.
+mail			A	172.22.10.184
+pop3			A	172.22.10.184
+smtp			A	172.22.10.184
+webmail			A	172.22.10.184
+$ORIGIN freseniuskabi.com.mx.
+pop3			A	201.151.179.27
+smtp			A	201.151.179.27
+stdomino		A	201.151.179.27
+			MX	1 mail.stdomino
+$ORIGIN stdomino.freseniuskabi.com.mx.
+ftp			A	201.151.179.27
+mail			A	201.151.179.27
+pop3			A	201.151.179.27
+smtp			A	201.151.179.27
+webmail			A	201.151.179.27
+webmail2		A	201.151.179.27
+www			A	201.151.179.27
+$ORIGIN freseniuskabi.com.mx.
+video			A	189.169.253.211
+			MX	1 mail.video
+$ORIGIN video.freseniuskabi.com.mx.
+ftp			A	189.169.253.211
+mail			A	189.169.253.211
+pop3			A	189.169.253.211
+smtp			A	189.169.253.211
+webmail			A	189.169.253.211
+webmail2		A	189.169.253.211
+www			A	189.169.253.211
+$ORIGIN freseniuskabi.com.mx.
+webmail			A	201.151.179.27
+webmail2		A	201.151.179.27
+www			A	201.151.179.27

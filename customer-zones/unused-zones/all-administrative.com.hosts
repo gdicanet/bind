@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+all-administrative.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+; Gestión DNS
+all-administrative.com.		IN	NS	ns1.gdlicanet.net.mx.
+all-administrative.com.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+all-administrative.com.			IN	A	201.151.179.17
+www.all-administrative.com.		IN	CNAME all-administrative.com.
+ftp.all-administrative.com.		IN	A	201.151.179.17
+
+; Gestión del correo electrónico
+all-administrative.com.				IN	MX		10 smtp.all-administrative.com.
+smtp.all-administrative.com.		IN	A		201.151.179.17
+mail.all-administrative.com.		IN	CNAME	smtp.all-administrative.com.
+pop3.all-administrative.com.		IN	A		201.151.179.17
+pop.all-administrative.com.			IN	CNAME	pop3.all-administrative.com.
+imap.all-administrative.com.		IN	CNAME	pop3.all-administrative.com.
+webmail.all-administrative.com.		IN	A		201.151.179.17
+

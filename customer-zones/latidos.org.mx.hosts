@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+latidos.org.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2013061300 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+latidos.org.mx.			IN	NS	ns1.gdlicanet.net.mx.
+latidos.org.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+latidos.org.mx.			300	IN	A		201.151.179.5
+www.latidos.org.mx.		300	IN	CNAME	latidos.org.mx.
+ftp.latidos.org.mx.		300	IN	A		201.151.179.5
+
+; Gestión del correo
+latidos.org.mx.			300	IN	MX	10 smtp.latidos.org.mx.
+mail.latidos.org.mx.		300	IN	CNAME	smtp.latidos.org.mx.
+smtp.latidos.org.mx.		300     IN	A		201.151.179.5
+pop3.latidos.org.mx.		300	IN	A		201.151.179.6
+pop.latidos.org.mx.		300	IN	CNAME	pop3.latidos.org.mx.
+imap.latidos.org.mx.		300	IN	CNAME	pop3.latidos.org.mx.
+webmail.latidos.org.mx. 	300	IN	A		201.151.179.5

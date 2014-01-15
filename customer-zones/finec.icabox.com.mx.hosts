@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+finec.icabox.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100922 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	187.188.145.75
+			MX	1 smtp.finec.icabox.com.mx.
+$ORIGIN finec.icabox.com.mx.
+ftp			A	187.188.145.75
+mail			A	187.188.145.75
+pop3			A	187.188.145.75
+smtp			A	187.188.145.75
+webmail			A	187.188.145.75
+webmail2		A	201.120.151.247
+www			A	187.188.145.75

@@ -1,0 +1,20 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+jimenezautocamiones.icabox.com.mx IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100912 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	187.188.145.191
+			MX	1 smtp.jimenezautocamiones.icabox.com.mx.
+$ORIGIN jimenezautocamiones.icabox.com.mx.
+ftp			A	201.155.234.59
+mail			A	201.155.234.59
+pop3			A	201.155.234.59
+smtp			A	201.155.234.59
+webmail			A	201.155.234.59
+www			A	201.155.234.59

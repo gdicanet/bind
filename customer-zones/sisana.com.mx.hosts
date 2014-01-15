@@ -1,0 +1,28 @@
+$TTL 86400      ; 1 día
+sisana.com.mx.           IN SOA  ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+                                2012000017 ; serial
+                                43200      ; refresh (12 horas)
+                                900        ; retry (15 minutes)
+                                1209600    ; expire (2 semanas)
+                                300        ; minimum (5 minutes)
+                                )
+
+; Gestión DNS
+sisana.com.mx.                   IN      NS      ns1.gdlicanet.net.mx.
+sisana.com.mx.                   IN      NS      ns2.gdlicanet.net.mx.
+
+; Página web
+sisana.com.mx.                   IN      A               201.151.179.24
+www.sisana.com.mx.               IN      CNAME   sisana.com.mx.
+ftp.sisana.com.mx.               IN      A               201.151.179.24
+
+; Gestión del correo
+sisana.com.mx.                   3600 IN MX 10 smtp.sisana.com.mx.
+mail.sisana.com.mx.                      IN      CNAME   smtp.sisana.com.mx.
+smtp.sisana.com.mx.                      IN      A               201.151.179.24
+pop3.sisana.com.mx.                      IN      A               201.151.179.24
+pop.sisana.com.mx.                       IN      CNAME   pop3.sisana.com.mx.
+imap.sisana.com.mx.                      IN      CNAME   pop3.sisana.com.mx.
+
+
+@                               300 IN  TXT     MS=ms10970417

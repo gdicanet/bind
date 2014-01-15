@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+iprostyle.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+iprostyle.com.			IN	NS	ns1.gdlicanet.net.mx.
+iprostyle.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+iprostyle.com.			IN	A		201.151.179.17
+www.iprostyle.com.		IN	CNAME	iprostyle.com.
+ftp.iprostyle.com.		IN	A		201.151.179.17
+
+; Gestión del correo
+iprostyle.com.				IN	MX		10 smtp.iprostyle.com.
+mail.iprostyle.com.			IN	CNAME	smtp.iprostyle.com.
+smtp.iprostyle.com.			IN	A		201.151.179.17
+pop3.iprostyle.com.			IN	A		201.151.179.17
+pop.iprostyle.com.			IN	CNAME	pop3.iprostyle.com.
+imap.iprostyle.com.			IN	CNAME	pop3.iprostyle.com.
+webmail.iprostyle.com.		IN	A		201.151.179.17
+

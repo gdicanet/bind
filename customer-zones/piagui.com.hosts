@@ -1,0 +1,44 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+piagui.com		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000142 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.20
+			MX	10 ASPMX.L.GOOGLE.COM.
+			MX	20 ALT1.ASPMX.L.GOOGLE.COM.
+			MX	30 ALT2.ASPMX.L.GOOGLE.COM.
+			MX	40 ASPMX2.GOOGLEMAIL.COM.
+			MX	50 ASPMX3.GOOGLEMAIL.COM.
+			TXT	"v=spf1 a mx include:ne16.com include:_spf.google.com ~all"
+$ORIGIN piagui.com.
+dkim1024._domainkey	TXT	"p= MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+FiyPNPLXbBWOe9SYrTpIbfOSI34S5rv82TLL11J3T7crRP/LcyVKVv/1iGoLVX8eUwhPPl7l61JPXpoSb51Rix2Z5bCBu1QTVvZjtS+2ZIYtlKPNeEd2CxGnMNCmJMglxdUvhsG5RQF8EQ+KgJxQ3Brv2CuY3wR4F8E5E1OO5QIDAQAB"
+almacen-mexico		A	172.22.9.4
+calendar		CNAME	ghs.google.com.
+docs			CNAME	ghs.google.com.
+email			CNAME	ghs.google.com.
+ftp			A	201.151.179.20
+inbit			A	201.151.179.20
+l9gdl			A	189.165.84.74
+			MX	1 smtp.l9gdl
+$ORIGIN l9gdl.piagui.com.
+ftp			A	192.168.1.64
+mail			A	192.168.1.64
+pop3			A	192.168.1.64
+smtp			A	192.168.1.64
+webmail			A	192.168.1.64
+www			A	192.168.1.64
+$ORIGIN piagui.com.
+mail			A	201.151.179.20
+pop3			A	201.151.179.20
+sites			CNAME	ghs.google.com.
+smtp			A	201.151.179.20
+video			CNAME	ghs.google.com.
+webmail			A	201.151.179.20
+webmail2		A	201.151.179.20
+www			A	201.151.179.20

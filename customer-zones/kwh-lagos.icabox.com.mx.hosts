@@ -1,0 +1,19 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+kwh-lagos.icabox.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007102218 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	172.22.9.28
+			MX	1 mail.kwh-lagos.icabox.com.mx.
+$ORIGIN kwh-lagos.icabox.com.mx.
+ftp			A	200.76.101.34
+mail			A	192.168.1.69
+pop3			A	192.168.1.69
+smtp			A	192.168.1.69
+webmail			A	192.168.1.69

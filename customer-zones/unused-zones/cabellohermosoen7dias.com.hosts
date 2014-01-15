@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+cabellohermosoen7dias.com. IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+cabellohermosoen7dias.com.		IN	NS	ns1.gdlicanet.net.mx.
+cabellohermosoen7dias.com.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+cabellohermosoen7dias.com.		IN	A	201.151.179.18
+www.cabellohermosoen7dias.com.	IN	CNAME	cabellohermosoen7dias.com.
+ftp.cabellohermosoen7dias.com.	IN	A	201.151.179.18
+
+; Gestión del correo
+cabellohermosoen7dias.com.			IN	MX		10 smtp.cabellohermosoen7dias.com.
+mail.cabellohermosoen7dias.com.		IN	CNAME	smtp.cabellohermosoen7dias.com.
+smtp.cabellohermosoen7dias.com.		IN	A		201.151.179.18
+pop3.cabellohermosoen7dias.com.		IN	A		201.151.179.18
+pop.cabellohermosoen7dias.com.		IN	CNAME	pop3.cabellohermosoen7dias.com.
+imap.cabellohermosoen7dias.com.		IN	CNAME	pop3.cabellohermosoen7dias.com.
+webmail.cabellohermosoen7dias.com.	IN	A		201.151.179.18
+

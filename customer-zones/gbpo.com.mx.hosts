@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+gbpo.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000011 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+gbpo.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+gbpo.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+gbpo.com.mx.		IN	A		201.151.179.30
+www.gbpo.com.mx.	IN	CNAME	gbpo.com.mx.
+ftp.gbpo.com.mx.	IN	A		201.151.179.30
+
+; Correo electrónico gestionado por google.
+gbpo.com.mx.			IN	MX	10 aspmx.l.google.com.
+gbpo.com.mx.			IN	MX	20 alt1.aspmx.l.google.com.
+gbpo.com.mx.			IN	MX	20 alt2.aspmx.l.google.com.
+gbpo.com.mx.			IN	MX	30 aspmx2.googlemail.com.
+gbpo.com.mx.			IN	MX	30 aspmx3.googlemail.com.
+gbpo.com.mx.			IN	MX	30 aspmx4.googlemail.com.
+mail.gbpo.com.mx.		IN	CNAME	ghs.google.com.

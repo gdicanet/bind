@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+jautomotriz.com	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000024 ; serial
+				43200      ; refresh (12 hours)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 weeks)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+$TTL 300	; 5 minutes
+			A	201.151.179.126
+			MX	1 smtp.jautomotriz.com.
+$ORIGIN jautomotriz.com.
+ftp			A	201.151.179.126
+imap			CNAME	pop3
+mail			CNAME	smtp
+pop			CNAME	pop3
+pop3			A	201.151.179.126
+smtp			A	201.151.179.126
+webmail			A	201.151.179.126
+www			CNAME	jautomotriz.com.

@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+tractocamiones.icabox.com.mx IN	SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101196 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	187.133.143.122
+			MX	1 mail.tractocamiones.icabox.com.mx.
+$ORIGIN tractocamiones.icabox.com.mx.
+ftp			A	200.76.101.34
+mail			A	187.133.11.62
+pop3			A	187.133.11.62
+smtp			A	187.133.11.62
+webmail			A	187.133.11.62
+webmail2		A	187.133.122.189
+www			A	187.133.122.189

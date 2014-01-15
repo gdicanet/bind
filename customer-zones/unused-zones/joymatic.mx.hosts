@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+joymatic.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000020 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+joymatic.mx.			IN	NS	ns1.gdlicanet.net.mx.
+joymatic.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+joymatic.mx.			IN	A		201.151.179.5
+www.joymatic.mx.		IN	CNAME	joymatic.mx.
+ftp.joymatic.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+joymatic.mx.				IN	MX		10 smtp.joymatic.mx.
+mail.joymatic.mx.			IN	CNAME	smtp.joymatic.mx.
+smtp.joymatic.mx.			IN	A		201.151.179.5
+pop3.joymatic.mx.			IN	A		201.151.179.6
+pop.joymatic.mx.			IN	CNAME	pop3.joymatic.mx.
+imap.joymatic.mx.			IN	CNAME	pop3.joymatic.mx.
+webmail.joymatic.mx.		IN	A		201.151.179.5
+

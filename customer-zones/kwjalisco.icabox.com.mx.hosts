@@ -1,0 +1,21 @@
+ORIGIN .
+$TTL 300	; 5 minutes
+kwjalisco.icabox.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101299 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	187.133.81.28
+			MX	1 smtp.kwjalisco.icabox.com.mx.
+$ORIGIN kwjalisco.icabox.com.mx.
+ftp			A	187.133.81.28
+mail			A	187.133.81.28
+pop3			A	187.133.81.28
+smtp			A	187.133.81.28
+webmail			A	187.133.81.28
+webmail2		A	187.133.122.189
+www			A	187.133.81.28

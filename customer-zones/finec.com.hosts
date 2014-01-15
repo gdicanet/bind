@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+finec.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000000 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+finec.com.				IN	NS	ns1.gdlicanet.net.mx.
+finec.com.				IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+finec.com.				IN	A		201.151.179.5
+www.finec.com.			IN	CNAME	finec.com.
+;ftp.finec.com.			IN	A		201.151.179.5
+
+; Gestión del correo
+finec.com.					IN	MX		10 smtp.finec.com.
+mail.finec.com.				IN	CNAME	smtp.finec.com.
+smtp.finec.com.				IN	A		201.151.179.5
+pop3.finec.com.				IN	A		201.151.179.6
+pop.finec.com.				IN	CNAME	pop3.finec.com.
+imap.finec.com.				IN	CNAME	pop3.finec.com.
+webmail.finec.com.			IN	A		201.151.179.5
+

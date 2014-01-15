@@ -1,0 +1,42 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+casuni.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101352 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.11
+			MX	1 mail.casuni.com.mx.
+$ORIGIN casuni.com.mx.
+ftp			A	201.151.179.11
+mail			A	201.151.179.11
+mex			A	172.22.9.8
+			MX	1 smtp.mex
+$ORIGIN mex.casuni.com.mx.
+ftp			A	201.103.122.65
+mail			A	201.103.122.65
+pop3			A	201.103.122.65
+smtp			A	201.103.122.65
+webmail			A	201.103.122.65
+www			A	201.103.122.65
+$ORIGIN casuni.com.mx.
+pop3			A	201.151.179.11
+slp			A	189.169.27.131
+			MX	1 mail.slp
+$ORIGIN slp.casuni.com.mx.
+ftp			A	189.169.27.131
+mail			A	189.169.27.131
+pop3			A	189.169.27.131
+smtp			A	189.169.27.131
+webmail			A	189.169.27.131
+webmail2		A	189.169.27.131
+www			A	189.169.27.131
+$ORIGIN casuni.com.mx.
+smtp			A	201.151.179.11
+webmail			A	201.151.179.11
+webmail2		A	201.151.179.11
+www			A	201.151.179.11

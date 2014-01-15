@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+logisticabpo.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000010 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+logisticabpo.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+logisticabpo.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+logisticabpo.com.mx.			IN	A		201.151.179.30
+www.logisticabpo.com.mx.		IN	CNAME	logisticabpo.com.mx.
+ftp.logisticabpo.com.mx.		IN	A		201.151.179.30
+
+; Gestión del correo
+logisticabpo.com.mx.				IN	MX		10 smtp.logisticabpo.com.mx.
+mail.logisticabpo.com.mx.			IN	CNAME	smtp.logisticabpo.com.mx.
+smtp.logisticabpo.com.mx.			IN	A		201.151.179.30
+pop3.logisticabpo.com.mx.			IN	A		201.151.179.30
+pop.logisticabpo.com.mx.			IN	CNAME	pop3.logisticabpo.com.mx.
+imap.logisticabpo.com.mx.			IN	CNAME	pop3.logisticabpo.com.mx.
+webmail.logisticabpo.com.mx.		IN	A		201.151.179.30
+

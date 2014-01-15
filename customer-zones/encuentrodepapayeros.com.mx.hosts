@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+encuentrodepapayeros.com.mx. IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000012 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+encuentrodepapayeros.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+encuentrodepapayeros.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+encuentrodepapayeros.com.mx.			IN	A		201.151.179.5
+www.encuentrodepapayeros.com.mx.		IN	CNAME	encuentrodepapayeros.com.mx.
+ftp.encuentrodepapayeros.com.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+encuentrodepapayeros.com.mx.				IN	MX		10 smtp.encuentrodepapayeros.com.mx.
+mail.encuentrodepapayeros.com.mx.			IN	CNAME	smtp.encuentrodepapayeros.com.mx.
+smtp.encuentrodepapayeros.com.mx.			IN	A		201.151.179.5
+pop3.encuentrodepapayeros.com.mx.			IN	A		201.151.179.6
+pop.encuentrodepapayeros.com.mx.			IN	CNAME	pop3.encuentrodepapayeros.com.mx.
+imap.encuentrodepapayeros.com.mx.			IN	CNAME	pop3.encuentrodepapayeros.com.mx.
+webmail.encuentrodepapayeros.com.mx.		IN	A		201.151.179.5
+

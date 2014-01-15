@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+finadadv.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000012 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+finadadv.com.				IN	NS	ns1.gdlicanet.net.mx.
+finadadv.com.				IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+finadadv.com.				IN	A		201.151.179.5
+www.finadadv.com.			IN	CNAME	finadadv.com.
+ftp.finadadv.com.			IN	A		201.151.179.5
+
+; Gestión del correo
+finadadv.com.					IN	MX		10 smtp.finadadv.com.
+mail.finadadv.com.				IN	CNAME	smtp.finadadv.com.
+smtp.finadadv.com.				IN	A		201.151.179.5
+pop3.finadadv.com.				IN	A		201.151.179.6
+pop.finadadv.com.				IN	CNAME	pop3.finadadv.com.
+imap.finadadv.com.				IN	CNAME	pop3.finadadv.com.
+webmail.finadadv.com.			IN	A		201.151.179.5
+

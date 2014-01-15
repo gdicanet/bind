@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+maver.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000009 ; serial
+				43200      ; refresh (12 hours)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 weeks)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			300 A	201.151.179.38
+			300 MX	1 smtp.maver.com.mx.
+$ORIGIN maver.com.mx.
+ftp			300 A	201.151.179.38
+imap			300 CNAME	pop3
+mail			300 CNAME	smtp
+pop			300 CNAME	pop3
+pop3			300 A	201.151.179.38
+smtp			300 A	201.151.179.38
+webmail			300 A	201.151.179.38
+www			300 CNAME	maver.com.mx.
+conference              300 A 201.151.179.48

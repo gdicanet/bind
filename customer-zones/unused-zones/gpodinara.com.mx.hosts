@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+gpodinara.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101009 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	187.133.63.208
+			MX	1 mail.gpodinara.com.mx.
+$ORIGIN gpodinara.com.mx.
+ftp			A	200.76.101.34
+mail			A	187.133.63.208
+pop3			A	187.133.63.208
+smtp			A	187.133.63.208
+webmail			A	187.133.63.208
+webmail2		A	187.133.63.208
+www			A	187.133.63.208

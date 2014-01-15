@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+dulcesvero.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100906 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	204.92.106.2
+			MX	1 mail.dulcesvero.com.mx.
+$ORIGIN dulcesvero.com.mx.
+ftp			A	200.52.142.168
+mail			A	200.52.142.168
+pop3			A	200.52.142.168
+smtp			A	200.52.142.168
+webmail			A	200.52.142.168
+webmail2		A	200.52.142.168
+www			A	204.92.106.2

@@ -1,0 +1,35 @@
+$TTL 86400	; 1 día
+globalcompany.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000004 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+globalcompany.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+globalcompany.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+globalcompany.com.mx.			IN	A		201.151.179.24
+www.globalcompany.com.mx.		IN	CNAME	globalcompany.com.mx.
+ftp.globalcompany.com.mx.		IN	A		201.151.179.24
+
+; Gestión del correo
+globalcompany.com.mx.                      3600 IN      MX 10   globalcompany-com-mx.mail.protection.outlook.com.
+;globalcompany.com.mx.				IN	MX 10   smtp.globalcompany.com.mx.
+mail.globalcompany.com.mx.			IN	CNAME	smtp.globalcompany.com.mx.
+smtp.globalcompany.com.mx.			IN	A		201.151.179.24
+pop3.globalcompany.com.mx.			IN	A		201.151.179.24
+pop.globalcompany.com.mx.			IN	CNAME	pop3.globalcompany.com.mx.
+imap.globalcompany.com.mx.			IN	CNAME	pop3.globalcompany.com.mx.
+webmail.globalcompany.com.mx.		IN	A		201.151.179.24
+
+;@                                3600 IN  TXT           "MS=ms15696746"
+@				  3600 IN	 TXT	       "v=spf1 include:spf.protection.outlook.com -all"
+_sip._tls.globalcompany.com.mx.              3600 IN  SRV 100 1 443  sipdir.online.lync.com.
+_sipfederationtls._tcp.globalcompany.com.mx. 3600 IN  SRV 100 1 5061 sipfed.online.lync.com.
+sip.globalcompany.com.mx.         3600 IN CNAME sipdir.online.lync.com.
+lyncdiscover.globalcompany.com.mx. 3600 IN CNAME webdir.online.lync.com.
+autodiscover.globalcompany.com.mx. 3600 IN CNAME autodiscover.outlook.com.

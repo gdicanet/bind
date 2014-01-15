@@ -1,0 +1,25 @@
+$TTL 86400	; 1 día
+tecitaly.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+; Servidores DNS
+tecitaly.com.			IN	NS	ns1.gdlicanet.net.mx.
+tecitaly.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+tecitaly.com.			IN	A		201.151.179.17
+www.tecitaly.com.		IN	CNAME	tecitaly.com.
+ftp.tecitaly.com.		IN	A		201.151.179.17
+
+; Gestión del correo
+tecitaly.com.				IN	MX		10 smtp.tecitaly.com.
+mail.tecitaly.com.			IN	CNAME	smtp.tecitaly.com.
+smtp.tecitaly.com.			IN	A		201.151.179.17
+pop3.tecitaly.com.			IN	A		201.151.179.17
+pop.tecitaly.com.			IN	CNAME	pop3.tecitaly.com.
+imap.tecitaly.com.			IN	CNAME	pop3.tecitaly.com.
+webmail.tecitaly.com.		IN	A		201.151.179.17
+

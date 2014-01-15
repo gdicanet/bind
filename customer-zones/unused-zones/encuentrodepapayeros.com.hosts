@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+encuentrodepapayeros.com. IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000002 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.76.101.34
+			MX	10 smtp.encuentrodepapayeros.com.
+$ORIGIN encuentrodepapayeros.com.
+ftp			A	200.76.101.34
+mail			CNAME	smtp.encuentrodepapayeros.com.
+pop			CNAME	pop3.encuentrodepapayeros.com.
+pop3			A	200.76.101.33
+imap			CNAME	pop3.encuentrodepapayeros.com.
+smtp			A	200.76.101.34
+webmail			A	200.76.101.34
+www			CNAME	encuentrodepapayeros.com.

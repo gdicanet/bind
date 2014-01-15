@@ -1,0 +1,19 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+brabinentertaiment.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100914 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.52.142.172
+			MX	1 mail.brabinentertaiment.com.mx.
+$ORIGIN brabinentertaiment.com.mx.
+pop3			A	200.52.142.172
+smtp			A	200.52.142.172
+webmail			A	200.52.142.172
+webmail2		A	200.52.142.172
+www			A	200.52.142.172

@@ -1,0 +1,16 @@
+$ttl 300
+localhost.	 IN 	SOA 	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+			2007100901
+			300
+			300
+			300
+			300 )
+localhost.	IN	NS	ns1.gdlicanet.net.mx.
+localhost.	IN	NS	ns2.gdlicanet.net.mx.
+localhost.	IN	MX	1	mail.localhost.
+localhost.	IN	A	200.52.142.173
+www.localhost.	IN	A	200.52.142.173
+webmail.localhost.	IN	A	200.52.142.173
+pop3.localhost.	IN	A	200.76.101.33
+smtp.localhost.	IN	A	200.76.101.33
+mail.localhost.	IN	A	200.76.101.34

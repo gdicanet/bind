@@ -1,0 +1,928 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+// Zonas de Resolución inversa
+zone "10.22.172.in-addr.arpa" IN {
+//	allow-query { trusted; };
+	type master;
+	file "/etc/bind/db.172.22.10";
+};
+
+zone "1.1.10.in-addr.arpa" IN {
+//	allow-query { trusted; };
+	type master;
+	file "/etc/bind/db.10.1.1";
+};
+// Fin de las zonas de Resolución inversa
+
+// Zonas de los clientes
+
+zone "alevinos.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/alevinos.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "artexport.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/artexport.com.mx.hosts";
+};
+
+zone "brabinentertaiment.mx" {
+	type master;
+	file "/etc/bind/customer-zones/brabinentertaiment.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "brabinentertaiment.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/brabinentertaiment.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch0.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch0.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch1.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch1.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch10.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch10.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch11.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch11.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch12.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch12.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch13.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch13.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch14.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch14.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch15.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch15.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch16.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch16.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch17.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch17.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch18.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch18.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch2.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch2.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch3.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch3.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch4.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch4.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch5.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch5.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch6.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch6.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch7.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch7.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch8.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch8.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "branch9.fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/branch9.fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Kyo & Mateo, cambiar registrar a ns1.gdlicanet.net.mx, ns2
+zone "casuni.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/casuni.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "cbpo.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/cbpo.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// Zona cce.com.mx eliminada, dominio muerto
+
+zone "climalaboralmx.com" {
+	type master;
+	file "/etc/bind/customer-zones/climalaboralmx.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "cnsanfrancisco.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/cnsanfrancisco.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// Zona colinasdesarrollo.com eliminada, dominio muerto
+
+zone "comercialpa.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/comercialpa.com.mx.hosts";
+	#allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Zona credimovil.com.mx no resuelve con nosotros, no apunta a nosotros
+zone "credimovil.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/credimovil.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: No hay registros DNS en el registrar
+zone "echancedemexico.mx" {
+	type master;
+	file "/etc/bind/customer-zones/echancedemexico.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: No hay registros DNS en el registrar
+zone "echancedemexico.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/echancedemexico.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "encuentrodepapayeros.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/encuentrodepapayeros.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "farma-net.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/farma-net.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "finadadv.com" {
+	type master;
+	file "/etc/bind/customer-zones/finadadv.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "fincapital.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/fincapital.com.mx.hosts";
+	#allow-update { key gdlicanet.net.mx; };
+};
+
+zone "finec.com" {
+	type master;
+	file "/etc/bind/customer-zones/finec.com.hosts";
+	#allow-update { key gdlicanet.net.mx; };
+};
+
+zone "finec.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/finec.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "finec.icabox.com.mx" {
+        type master;
+        file "/etc/bind/customer-zones/finec.icabox.com.mx.hosts";
+        allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Kyo & Mateo, cambiar registrar a ns1.gdlicanet.net.mx, ns2
+zone "fmcmexico.com" {
+	type master;
+	file "/etc/bind/customer-zones/fmcmexico.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "freseniuskabi.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/freseniuskabi.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "fresenius-kabi.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/fresenius-kabi.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// Zona gdl-icanet.net.mx eliminada, dominio muerto
+
+zone "gbpo.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gbpo.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch1.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch1.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch10.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch10.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch11.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch11.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch12.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch12.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch13.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch13.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch14.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch14.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch15.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch15.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch2.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch2.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch3.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch3.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch4.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch4.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch5.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch5.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch6.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch6.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch7.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch7.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch8.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch8.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpibranch9.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpibranch9.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpicentral.gdlicanet.net.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpicentral.gdlicanet.net.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "gpicomercial.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/gpicomercial.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "generix.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/generix.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "globalcompany.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/globalcompany.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "granmar.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/granmar.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "headhuntersmx.com" {
+	type master;
+	file "/etc/bind/customer-zones/headhuntersmx.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "iidea.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/iidea.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Zona iideaweb.com, no resolvemos, no apunta a nosotros
+zone "iideaweb.com" {
+	type master;
+	file "/etc/bind/customer-zones/iideaweb.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "intropacifico.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/intropacifico.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Zona inulin.com.mx, no resolvemos, no apunta a nosotros
+zone "inulin.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/inulin.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Zona issy29.org.mx, no resolvemos, no apunta a nosotros
+zone "issy29.org.mx" {
+	type master;
+	file "/etc/bind/customer-zones/issy29.org.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jacbranch1.icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/jacbranch1.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jimenezautocamiones.icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/jimenezautocamiones.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jimenezautomotriz.com" {
+	type master;
+	file "/etc/bind/customer-zones/jimenezautomotriz.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jautomotriz.com" {
+	type master;
+	file "/etc/bind/customer-zones/jautomotriz.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jimenezford.com" {
+	type master;
+	file "/etc/bind/customer-zones/jimenezford.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jmm.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/jmm.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "jmm.mx" {
+	type master;
+	file "/etc/bind/customer-zones/jmm.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "kwh-central.icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/kwh-central.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "kwh-guzman.icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/kwh-guzman.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "kwh-lagos.icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/kwh-lagos.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "kwh-tepa.icabox.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/kwh-tepa.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "lagunavista.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/lagunavista.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Kyo & Mateo, cambiar registrar a ns1.gdlicanet.net.mx, ns2
+zone "lluviadeestrellas.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/lluviadeestrellas.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "logisticabpo.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/logisticabpo.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "manik.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/manik.com.mx.hosts";
+};
+
+zone "maradol.com" {
+	type master;
+	file "/etc/bind/customer-zones/maradol.com.hosts";
+};
+
+zone "maradol.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/maradol.com.mx.hosts";
+};
+
+zone "maver.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/maver.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "medigen.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/medigen.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "megagdl.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/megagdl.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+#zone "mhealth.com.mx" {
+#	type master;
+#	file "/etc/bind/customer-zones/mhealth.com.mx.hosts";
+#	allow-update { key gdlicanet.net.mx; };
+#};
+
+zone "mpaimports.com" {
+	type master;
+	file "/etc/bind/customer-zones/mpaimports.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "mypiagui.com" {
+	type master;
+	file "/etc/bind/customer-zones/mypiagui.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Zona naturel.com.mx, no resuelve con nosotros, no apunta a nosotros
+zone "naturel.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/naturel.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "naturex.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/naturex.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "neurocapacitacionmx.com" {
+	type master;
+	file "/etc/bind/customer-zones/neurocapacitacionmx.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "nutragold.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/nutragold.com.mx.hosts";
+};
+
+zone "nutrimar.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/nutrimar.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "ocotlan.jimenezautomotriz.com" {
+	type master;
+	file "/etc/bind/customer-zones/ocotlan.jimenezautomotriz.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "papayaseed.com" {
+	type master;
+	file "/etc/bind/customer-zones/papayaseed.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "papayasmexicanas.com" {
+	type master;
+	file "/etc/bind/customer-zones/papayasmexicanas.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "piagui.com" {
+	type master;
+	file "/etc/bind/customer-zones/piagui.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "piagui.mx" {
+	type master;
+	file "/etc/bind/customer-zones/piagui.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "pilarquim.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/pilarquim.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "pisiosa.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/pisiosa.com.mx.hosts";
+};
+
+zone "plantagm.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/plantagm.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "playhouseleon.com" {
+	type master;
+	file "/etc/bind/customer-zones/playhouseleon.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "playhouseleon.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/playhouseleon.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "retonozapotlanejo.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/retonozapotlanejo.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "semilladelcaribe.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/semilladelcaribe.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "semillasdelcaribe.com" {
+	type master;
+	file "/etc/bind/customer-zones/semillasdelcaribe.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "semillasdelcaribe.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/semillasdelcaribe.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "socioeconomicosmx.com" {
+	type master;
+	file "/etc/bind/customer-zones/socioeconomicosmx.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// Zona solucionexpress.com.mx eliminada, dominio muerto
+// Zona spia.mx eliminada, dominio muerto.
+
+// FIXME: Zona sunhydraulics.mx no resuelve con nosotros, no apunta a nosotros
+zone "sunhydraulics.mx" {
+	type master;
+	file "/etc/bind/customer-zones/sunhydraulics.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+// FIXME: Zona sweetfiber.com.mx no resuelve con nosotros, no apunta a nosotros
+zone "sweetfiber.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/sweetfiber.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "tenfarma.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/tenfarma.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "theiideacompany-naturel.com" {
+	type master;
+	file "/etc/bind/customer-zones/theiideacompany-naturel.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "theiideacompany-inufib.com" {
+	type master;
+	file "/etc/bind/customer-zones/theiideacompany-inufib.com.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "theiideacompany-switter.com" {
+        type master;
+        file "/etc/bind/customer-zones/theiideacompany-switter.com.hosts";
+        allow-update { key gdlicanet.net.mx; };
+};
+
+zone "theiideacompany-donalvaro.com" {
+        type master;
+        file "/etc/bind/customer-zones/theiideacompany-donalvaro.com.hosts";
+        allow-update { key gdlicanet.net.mx; };
+};
+
+zone "ventasmaver.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/ventasmaver.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "ventasmaver.mx" {
+	type master;
+	file "/etc/bind/customer-zones/ventasmaver.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "vitaminhouse.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/vitaminhouse.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "vitaminhouse.mx" {
+	type master;
+	file "/etc/bind/customer-zones/vitaminhouse.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "vyn.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/vyn.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "vyn.mx" {
+	type master;
+	file "/etc/bind/customer-zones/vyn.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "qualia.mx" {
+        type master;
+        file "/etc/bind/customer-zones/qualia.mx.hosts";
+};
+
+zone "iidea-usa.com" {
+        type master;
+        file "/etc/bind/customer-zones/iidea-usa.com.hosts";
+};
+
+zone "enlacedf.freseniuskabi.com.mx" {
+	type master;
+	file "/etc/bind/customer-zones/enlacedf.freseniuskabi.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "kwjalisco.icabox.com.mx" {
+        type master;
+        file "/etc/bind/customer-zones/kwjalisco.icabox.com.mx.hosts";
+        allow-update { key gdlicanet.net.mx; };
+};
+
+zone "nevadatours.com.mx" {
+        type master;
+        file "/etc/bind/customer-zones/nevadatours.com.mx.hosts";
+        allow-update { key gdlicanet.net.mx; };
+};
+
+zone "iideabc.mx" {
+        type master;
+        file "/etc/bind/customer-zones/iideabc.mx.hosts";
+        allow-update { key gdlicanet.net.mx; };
+};
+
+zone "latidos.org.mx" {
+       type master;
+        file "/etc/bind/customer-zones/latidos.org.mx.hosts";
+};
+
+zone "latidos.mx" {
+       type master;
+        file "/etc/bind/customer-zones/latidos.mx.hosts";
+};
+
+zone "biomiral.com" {
+       type master;
+        file "/etc/bind/customer-zones/biomiral.com.hosts";
+};
+
+zone "pchospital.mx" {
+       type master;
+        file "/etc/bind/customer-zones/pchospital.mx.hosts";
+};
+
+zone "grupoacuicolamexicano.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/grupoacuicolamexicano.com.mx.hosts";
+};
+
+zone "grupoacuicolamexicano.mx" {
+       type master;
+        file "/etc/bind/customer-zones/grupoacuicolamexicano.mx.hosts";
+};
+
+
+zone "divemex.com" {
+       type master;
+        file "/etc/bind/customer-zones/divemex.com.hosts";
+};
+
+zone "i-r.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/i-r.com.mx.hosts";
+};
+
+zone "dulcesyiyo.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/dulcesyiyo.com.mx.hosts";
+};
+
+zone "probeltemexico.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/probeltemexico.com.mx.hosts";
+};
+
+zone "hasesoresjuridicos.com" {
+       type master;
+        file "/etc/bind/customer-zones/hasesoresjuridicos.com.hosts";
+};
+
+zone "cenitsa.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/cenitsa.com.mx.hosts";
+};
+
+zone "siter.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/siter.com.mx.hosts";
+};
+
+zone "incremento.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/incremento.com.mx.hosts";
+};
+
+
+zone "tractocamiones.icabox.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/tractocamiones.icabox.com.mx.hosts";
+	allow-update { key gdlicanet.net.mx; };
+};
+
+zone "projob.mx" {
+       type master;
+        file "/etc/bind/customer-zones/projob.mx.hosts";
+};
+
+zone "mvproveedores.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/mvproveedores.com.mx.hosts";
+};
+
+zone "mvproveedores.mx" {
+       type master;
+        file "/etc/bind/customer-zones/mvproveedores.mx.hosts";
+};
+
+zone "sisana.com.mx" {
+       type master;
+        file "/etc/bind/customer-zones/sisana.com.mx.hosts";
+};
+
+

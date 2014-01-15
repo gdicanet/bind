@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+residencialjardines.com.mx IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100905 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.158.149.51
+			MX	1 mail.residencialjardines.com.mx.
+$ORIGIN residencialjardines.com.mx.
+ftp			A	201.158.149.51
+mail			A	201.158.149.51
+pop3			A	201.158.149.51
+smtp			A	201.158.149.51
+webmail			A	201.158.149.51
+webmail2		A	201.158.149.51
+www			A	201.158.149.51

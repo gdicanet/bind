@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+mifarmacita.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2010100011 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.5
+			MX	10 smtp.mifarmacita.com.mx.
+$ORIGIN mifarmacita.com.mx.
+ftp			A	201.151.179.5
+imap			CNAME	pop3
+mail			CNAME	smtp
+pop			CNAME	pop3
+pop3			A	201.151.179.6
+smtp			A	201.151.179.5
+webmail			A	201.151.179.5
+www			CNAME	mifarmacita.com.mx.

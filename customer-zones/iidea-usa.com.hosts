@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+iidea-usa.com.	   IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012001002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+iidea-usa.com. 			IN	NS	ns1.gdlicanet.net.mx.
+iidea-usa.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+iidea-usa.com.			IN	A	201.151.179.24
+www.iidea-usa.com.		IN	CNAME	iidea-usa.com.
+ftp.iidea-usa.com.			IN	A	201.151.179.24
+
+; Gestión del correo
+iidea-usa.com.			300	IN	MX	0 smtp.secureserver.net.
+iidea-usa.com.			300	IN	MX	10 mailstore1.secureserver.net.
+mail.iidea-usa.com.			300	IN	CNAME	smtp.iidea-usa.com.
+smtp.iidea-usa.com.			300     IN	A	201.151.179.24
+pop3.iidea-usa.com.			300	IN	A	201.151.179.24
+pop.iidea-usa.com.			IN	CNAME	pop3.iidea-usa.com.
+imap.iidea-usa.com.			IN	CNAME	pop3.iidea-usa.com.
+webmail.iidea-usa.com. 		300	IN	A	201.151.179.24

@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+artexport.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000012 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+artexport.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+artexport.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+artexport.com.mx.		IN	A		142.4.21.210
+www.artexport.com.mx.	IN	CNAME	artexport.com.mx.
+ftp.artexport.com.mx.	IN	A		201.151.179.5
+
+; Gestión del correo
+artexport.com.mx.			IN	MX		10 smtp.artexport.com.mx.
+mail.artexport.com.mx.		IN	CNAME	smtp.artexport.com.mx.
+smtp.artexport.com.mx.		IN	A		201.151.179.5
+pop3.artexport.com.mx.		IN	A		201.151.179.6
+pop.artexport.com.mx.		IN	CNAME	pop3.artexport.com.mx.
+imap.artexport.com.mx.		IN	CNAME	pop3.artexport.com.mx.
+webmail.artexport.com.mx.	IN	A		201.151.179.5

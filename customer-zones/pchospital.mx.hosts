@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+pchospital.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+pchospital.mx.			IN	NS	ns1.gdlicanet.net.mx.
+pchospital.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+pchospital.mx.			IN	A	201.151.179.24
+www.pchospital.mx.		300    IN	CNAME   pchospital.mx.
+ftp.pchospital.mx.		IN	A		201.151.179.24
+
+; Gestión del correo
+pchospital.mx.			300	IN	MX 10 mail.pchospital.mx.
+mail.pchospital.mx.		300	IN	CNAME	smtp.pchospital.mx.
+smtp.pchospital.mx.		300	IN	A	201.151.179.24
+pop3.pchospital.mx.		300	IN	A		201.151.179.24
+pop.pchospital.mx.		300	IN	CNAME	pop3.pchospital.mx.
+imap.pchospital.mx.			IN	CNAME	pop3.pchospital.mx.
+webmail.pchospital.mx.		300 IN	A	201.151.179.24

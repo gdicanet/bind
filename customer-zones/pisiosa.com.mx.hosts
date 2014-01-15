@@ -1,0 +1,27 @@
+$TTL 86400	; 1 dia
+pisiosa.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+pisiosa.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+pisiosa.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+pisiosa.com.mx.		IN	A	201.151.179.24
+www.pisiosa.com.mx.	IN	CNAME	www.pisiosa.com.mx.
+ftp.pisiosa.com.mx.	IN	A	201.151.179.24
+
+; Gestión del correo
+pisiosa.com.mx.			IN	MX	10 smtp.pisiosa.com.mx.
+mail.pisiosa.com.mx.		IN	CNAME	smtp.pisiosa.com.mx.
+smtp.pisiosa.com.mx.		IN	A	201.151.179.24
+pop3.pisiosa.com.mx.		IN	A	201.151.179.24
+pop.pisiosa.com.mx.		IN	CNAME	pop3.pisiosa.com.mx.
+imap.pisiosa.com.mx.		IN	CNAME	pop3.pisiosa.com.mx.
+webmail.pisiosa.com.mx.		IN	A	201.151.179.24
+

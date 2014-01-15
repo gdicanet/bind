@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+lagunavista.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000020 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+lagunavista.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+lagunavista.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+lagunavista.com.mx.			IN	A		201.151.179.5
+www.lagunavista.com.mx.		IN	CNAME	lagunavista.com.mx.
+ftp.lagunavista.com.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+lagunavista.com.mx.				IN	MX		10 smtp.lagunavista.com.mx.
+mail.lagunavista.com.mx.			IN	CNAME	smtp.lagunavista.com.mx.
+smtp.lagunavista.com.mx.			IN	A		201.151.179.5
+pop3.lagunavista.com.mx.			IN	A		201.151.179.6
+pop.lagunavista.com.mx.			IN	CNAME	pop3.lagunavista.com.mx.
+imap.lagunavista.com.mx.			IN	CNAME	pop3.lagunavista.com.mx.
+webmail.lagunavista.com.mx.		IN	A		201.151.179.5
+

@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+branch18.fmcmexico.com	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101047 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	187.133.124.102
+			MX	1 mail.branch18.fmcmexico.com.
+$ORIGIN branch18.fmcmexico.com.
+ftp			A	200.76.101.34
+mail			A	187.133.124.102
+pop3			A	187.133.124.102
+smtp			A	187.133.124.102
+webmail			A	187.133.124.102
+webmail2		A	187.133.124.102
+www			A	200.57.147.12

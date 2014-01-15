@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+theiideacompany-switter.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+theiideacompany-switter.com.	IN	NS	ns1.gdlicanet.net.mx.
+theiideacompany-switter.com.	IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+theiideacompany-switter.com.	IN	A		201.151.179.24
+www.theiideacompany-switter.com.	IN	CNAME	theiideacompany-switter.com.
+theiideacompany-switter.com.	IN	A		201.151.179.24
+
+; Gestión del correo
+theiideacompany-switter.com.				IN	MX		10 smtp.theiideacompany-switter.com.
+mail.theiideacompany-switter.com.	IN	CNAME	smtp.theiideacompany-switter.com.
+smtp.theiideacompany-switter.com.	IN	A		201.151.179.24
+pop3.theiideacompany-switter.com.	IN	A		201.151.179.24
+pop.theiideacompany-switter.com.	IN	CNAME	pop3.iidea.com.mx.
+imap.theiideacompany-switter.com.	IN	CNAME	pop3.iidea.com.mx.
+webmail.theiideacompany-switter.com.	IN	A		201.151.179.24
+

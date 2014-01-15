@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+jmm.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000020 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+jmm.mx.			IN	NS	ns1.gdlicanet.net.mx.
+jmm.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+jmm.mx.			IN	A		201.151.179.5
+www.jmm.mx.		IN	CNAME	jmm.mx.
+ftp.jmm.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+jmm.mx.				IN	MX		10 smtp.jmm.mx.
+mail.jmm.mx.			IN	CNAME	smtp.jmm.mx.
+smtp.jmm.mx.			IN	A		201.151.179.5
+pop3.jmm.mx.			IN	A		201.151.179.6
+pop.jmm.mx.			IN	CNAME	pop3.jmm.mx.
+imap.jmm.mx.			IN	CNAME	pop3.jmm.mx.
+webmail.jmm.mx.		IN	A		201.151.179.5
+

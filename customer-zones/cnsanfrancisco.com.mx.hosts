@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+cnsanfrancisco.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+cnsanfrancisco.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+cnsanfrancisco.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+cnsanfrancisco.com.mx.			IN	A		201.151.179.22
+www.cnsanfrancisco.com.mx.		IN	CNAME	cnsanfrancisco.com.mx.
+ftp.cnsanfrancisco.com.mx.		IN	A		201.151.179.22
+
+; Gestión del correo
+cnsanfrancisco.com.mx.				IN	MX		10 smtp.cnsanfrancisco.com.mx.
+mail.cnsanfrancisco.com.mx.			IN	CNAME	smtp.cnsanfrancisco.com.mx.
+smtp.cnsanfrancisco.com.mx.			IN	A		201.151.179.22
+pop3.cnsanfrancisco.com.mx.			IN	A		201.151.179.22
+pop.cnsanfrancisco.com.mx.			IN	CNAME	pop3.cnsanfrancisco.com.mx.
+imap.cnsanfrancisco.com.mx.			IN	CNAME	imap.cnsanfrancisco.com.mx.
+webmail.cnsanfrancisco.com.mx.		IN	A		201.151.179.22
+

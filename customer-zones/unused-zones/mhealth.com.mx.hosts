@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+mhealth.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100911 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.52.142.181
+			MX	1 mail.mhealth.com.mx.
+$ORIGIN mhealth.com.mx.
+ftp			A	200.76.101.34
+mail			A	200.52.142.181
+pop3			A	200.52.142.181
+smtp			A	200.52.142.181
+webmail			A	200.52.142.181
+webmail2		A	200.52.142.181
+www			A	200.52.142.181

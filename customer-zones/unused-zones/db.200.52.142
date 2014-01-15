@@ -1,0 +1,44 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	localhost. root.localhost. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+160	IN	PTR	160.
+161	IN	PTR	ns1.
+162	IN	PTR	ns2.
+163	IN	PTR	autoya.
+164	IN	PTR	casuni.
+165	IN	PTR	165.
+166	IN	PTR	vpnserver.
+167	IN	PTR	dulcesvero.
+168	IN	PTR	dulcesvero.
+169	IN	PTR	quimicos.
+170	IN	PTR	170.
+171	IN	PTR	piagui.
+172	IN	PTR	gpi.
+173	IN	PTR	megahealth-aguablanca.
+174	IN	PTR	174.
+175	IN	PTR	iidea.
+176	IN	PTR	natturalabs.
+177	IN	PTR	177.
+178	IN	PTR	pymecom.
+179	IN	PTR	179.
+180	IN	PTR	freseniuskabi.
+181	IN	PTR	megahealth.
+182	IN	PTR	182.
+183	IN	PTR	183.
+184	IN	PTR	184.
+185	IN	PTR	185.
+186	IN	PTR	186.
+187	IN	PTR	ciatej.
+188	IN	PTR	188.
+189	IN	PTR	189.
+190	IN	PTR	gateway.
+191	IN	PTR	broadcast.

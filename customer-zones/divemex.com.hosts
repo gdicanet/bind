@@ -1,0 +1,25 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+divemex.com		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000005 ; serial
+				43200      ; refresh (12 hours)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 weeks)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.17
+$TTL 300	; 5 minutes
+			MX	1 smtp.divemex.com.
+$ORIGIN divemex.com.
+$TTL 86400	; 1 day
+ftp			A	201.151.179.17
+imap			CNAME	pop3
+mail			CNAME	smtp
+pop			CNAME	pop3
+pop3			A	201.151.179.17
+smtp			A	201.151.179.17
+webmail			A	201.151.179.17
+www			CNAME	divemex.com.
+conference              A       201.151.179.17

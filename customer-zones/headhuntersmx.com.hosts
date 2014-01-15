@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+headhuntersmx.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000011 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+headhuntersmx.com.			IN	NS	ns1.gdlicanet.net.mx.
+headhuntersmx.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+headhuntersmx.com.			IN	A		201.151.179.5
+www.headhuntersmx.com.		IN	CNAME	headhuntersmx.com.
+ftp.headhuntersmx.com.		IN	A		201.151.179.5
+
+; Gestión del correo
+headhuntersmx.com.				IN	MX		10 smtp.headhuntersmx.com.
+mail.headhuntersmx.com.			IN	CNAME	smtp.headhuntersmx.com.
+smtp.headhuntersmx.com.			IN	A		201.151.179.5
+pop3.headhuntersmx.com.			IN	A		201.151.179.6
+pop.headhuntersmx.com.			IN	CNAME	pop3.headhuntersmx.com.
+imap.headhuntersmx.com.			IN	CNAME	pop3.headhuntersmx.com.
+webmail.headhuntersmx.com.		IN	A		201.151.179.5
+

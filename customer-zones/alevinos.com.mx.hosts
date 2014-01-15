@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+alevinos.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000010 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+; Servidores DNS
+alevinos.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+alevinos.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+alevinos.com.mx.		IN	A	201.151.179.30
+www.alevinos.com.mx.	IN	CNAME	alevinos.com.mx.
+ftp.alevinos.com.mx.	IN	A	201.151.179.30
+
+; Gestión del correo electrónico
+alevinos.com.mx.			IN	MX	10 smtp.alevinos.com.mx.
+imap.alevinos.com.mx.		IN	CNAME	pop3.alevinos.com.mx.
+mail.alevinos.com.mx.		IN	CNAME	smtp.alevinos.com.mx.
+pop.alevinos.com.mx.		IN	CNAME	pop3.alevinos.com.mx.
+smtp.alevinos.com.mx.		IN	A	201.151.179.30
+pop3.alevinos.com.mx.		IN	A	201.151.179.30
+webmail.alevinos.com.mx.	IN	A	201.151.179.30
+

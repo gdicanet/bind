@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+jacbranch1.icabox.com.mx IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100907 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.120.151.247
+			MX	1 mail.jacbranch1.icabox.com.mx.
+$ORIGIN jacbranch1.icabox.com.mx.
+ftp			A	200.76.101.34
+mail			A	201.120.151.247
+pop3			A	201.120.151.247
+smtp			A	201.120.151.247
+webmail			A	201.120.151.247
+webmail2		A	201.120.151.247
+www			A	201.120.151.247

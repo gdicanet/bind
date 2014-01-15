@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+gpibranch7.gdlicanet.net.mx IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101077 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	189.135.6.23
+			MX	1 mail.gpibranch7.gdlicanet.net.mx.
+$ORIGIN gpibranch7.gdlicanet.net.mx.
+ftp			A	200.76.101.34
+mail			A	189.135.6.23
+pop3			A	189.135.6.23
+smtp			A	189.135.6.23
+webmail			A	189.135.6.23
+webmail2		A	189.135.6.23
+www			A	189.135.6.23

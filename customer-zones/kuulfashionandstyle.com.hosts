@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+kuulfashionandstyle.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+kuulfashionandstyle.com.			IN	NS	ns1.gdlicanet.net.mx.
+kuulfashionandstyle.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+kuulfashionandstyle.com.			IN	A		201.151.179.18
+www.kuulfashionandstyle.com.		IN	CNAME	kuulfashionandstyle.com.
+ftp.kuulfashionandstyle.com.		IN	A		201.151.179.18
+
+; Gestión del correo
+kuulfashionandstyle.com.				IN	MX		10 smtp.kuulfashionandstyle.com.
+mail.kuulfashionandstyle.com.			IN	CNAME	smtp.kuulfashionandstyle.com.
+smtp.kuulfashionandstyle.com.			IN	A		201.151.179.18
+pop3.kuulfashionandstyle.com.			IN	A		201.151.179.18
+pop.kuulfashionandstyle.com.			IN	CNAME	pop3.kuulfashionandstyle.com.
+imap.kuulfashionandstyle.com.			IN	CNAME	pop3.kuulfashionandstyle.com.
+webmail.kuulfashionandstyle.com.		IN	A		201.151.179.18
+

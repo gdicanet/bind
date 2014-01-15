@@ -1,0 +1,26 @@
+$TTL 300	; 5 minutes
+patrice.com.mx.		IN SOA	ns1.gdlicanet.net.mx. hostmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+patrice.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+patrice.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; La parte web
+patrice.com.mx.			IN	A	201.151.179.18
+www.patrice.com.mx.		IN	CNAME	patrice.com.mx.
+
+; Correo
+patrice.com.mx.			IN	MX	10 smtp.patrice.com.mx.
+smtp.patrice.com.mx.		IN	A	201.151.179.18
+pop3.patrice.com.mx.		IN	A	201.151.179.18
+mail.patrice.com.mx.		IN	CNAME	smtp.patrice.com.mx.
+pop.patrice.com.mx.		IN	CNAME	pop3.patrice.com.mx.
+imap.patrice.com.mx.		IN	CNAME	pop3.patrice.com.mx.
+
+; Otros
+webmail.patrice.com.mx.		IN	A	201.151.179.18
+ftp.patrice.com.mx.		IN	A	201.151.179.18

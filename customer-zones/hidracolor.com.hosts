@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+hidracolor.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+hidracolor.com.			IN	NS	ns1.gdlicanet.net.mx.
+hidracolor.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+hidracolor.com.			IN	A		201.151.179.18
+www.hidracolor.com.		IN	CNAME	hidracolor.com.
+ftp.hidracolor.com.		IN	A		201.151.179.18
+
+; Gestión del correo
+hidracolor.com.				IN	MX		10 smtp.hidracolor.com.
+mail.hidracolor.com.			IN	CNAME	smtp.hidracolor.com.
+smtp.hidracolor.com.			IN	A		201.151.179.18
+pop3.hidracolor.com.			IN	A		201.151.179.18
+pop.hidracolor.com.			IN	CNAME	pop3.hidracolor.com.
+imap.hidracolor.com.			IN	CNAME	pop3.hidracolor.com.
+webmail.hidracolor.com.		IN	A		201.151.179.18
+

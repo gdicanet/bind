@@ -1,0 +1,28 @@
+$TTL 86400	; 1 día
+nbcnattura.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+; Servidores DNS
+nbcnattura.com.			IN	NS	ns1.gdlicanet.net.mx.
+nbcnattura.com.			IN	NS	ns2.gdlicanet.net.mx.
+$TTL 300
+nbcnattura.com.			IN	A		201.151.179.18
+www.nbcnattura.com.		IN	CNAME	nbcnattura.com.
+ftp.nbcnattura.com.		IN	A		201.151.179.18
+en.nbcnattura.com.		IN	CNAME	nbcnattura.com.
+www.en.nbcnattura.com.          IN      CNAME   nbcnattura.com.
+blog.nbcnattura.com.            IN      CNAME   nbcnattura.com.
+www.blog.nbcnattura.com.        IN      CNAME   nbcnattura.com.
+
+; Gestión del correo
+nbcnattura.com.				IN	MX		10 smtp.nbcnattura.com.
+mail.nbcnattura.com.			IN	CNAME	smtp.nbcnattura.com.
+smtp.nbcnattura.com.			IN	A		201.151.179.18
+pop3.nbcnattura.com.			IN	A		201.151.179.18
+pop.nbcnattura.com.			IN	CNAME	pop3.nbcnattura.com.
+imap.nbcnattura.com.			IN	CNAME	pop3.nbcnattura.com.
+webmail.nbcnattura.com.			IN	A		201.151.179.18

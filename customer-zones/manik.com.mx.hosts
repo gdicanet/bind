@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+manik.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000012 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+manik.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+manik.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+manik.com.mx.			IN	A		201.151.179.5
+www.manik.com.mx.		IN	CNAME	manik.com.mx.
+ftp.manik.com.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+manik.com.mx.				IN	MX		10 smtp.manik.com.mx.
+mail.manik.com.mx.			IN	CNAME	smtp.manik.com.mx.
+smtp.manik.com.mx.			IN	A		201.151.179.5
+pop3.manik.com.mx.			IN	A		201.151.179.6
+pop.manik.com.mx.			IN	CNAME	pop3.manik.com.mx.
+imap.manik.com.mx.			IN	CNAME	pop3.manik.com.mx.
+webmail.manik.com.mx.		IN	A		201.151.179.5
+

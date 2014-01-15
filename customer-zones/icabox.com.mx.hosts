@@ -1,0 +1,208 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+icabox.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012001181 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.5
+			MX	1 201.151.179.124.
+$ORIGIN icabox.com.mx.
+antispam		A	172.22.10.246
+atenciontelefonica	A	201.151.179.43
+autoya			A	172.22.10.235
+balanceadora		A	172.22.10.254
+carlsjr			A	201.151.179.12
+$ORIGIN carlsjr.icabox.com.mx.
+mail			A	201.151.179.12
+pop3			A	201.151.179.12
+smtp			A	201.151.179.12
+webmail			A	201.151.179.12
+$ORIGIN icabox.com.mx.
+casuni			A	172.22.10.237
+cbpo			A	172.22.10.228
+cbpo2			A	172.22.10.251
+			A	201.151.179.31
+$ORIGIN cbpo2.icabox.com.mx.
+mail			A	201.151.179.31
+pop3			A	201.151.179.31
+smtp			A	201.151.179.31
+webmail			A	201.151.179.31
+$ORIGIN icabox.com.mx.
+cfm			A	201.151.179.39
+$ORIGIN cfm.icabox.com.mx.
+mail			A	201.151.179.39
+pop3			A	201.151.179.39
+smtp			A	201.151.179.39
+webmail			A	201.151.179.39
+$ORIGIN icabox.com.mx.
+cloe			A	172.22.10.239
+			A	201.151.179.37
+energas			A	172.22.10.223
+enlace1			A	172.22.10.253
+espaciomovil		A	201.167.119.130
+$ORIGIN espaciomovil.icabox.com.mx.
+mail			A	201.167.119.130
+pop3			A	201.167.119.130
+smtp			A	201.167.119.130
+webmail			A	201.167.119.130
+$ORIGIN icabox.com.mx.
+exhimoda		A	172.17.0.2
+finec-providencia	A	172.22.9.26
+finec-zapopan		A	172.22.11.8
+gpicomercial		A	172.22.10.244
+iidea			A	172.22.10.249
+imap			A	201.151.179.124
+itea			A	201.151.179.44
+jac			A	201.155.234.59
+$ORIGIN jac.icabox.com.mx.
+mail			A	201.155.234.59
+pop3			A	201.155.234.59
+smtp			A	201.155.234.59
+webmail			A	201.155.234.59
+$ORIGIN icabox.com.mx.
+jimenezford		A	172.22.10.243
+kwh-colima		A	172.22.9.15
+			MX	1 mail.kwh-colima
+$ORIGIN kwh-colima.icabox.com.mx.
+ftp			A	187.173.208.31
+mail			A	187.173.208.31
+pop3			A	187.173.208.31
+smtp			A	187.173.208.31
+webmail			A	187.173.208.31
+webmail2		A	187.173.208.31
+www			A	187.173.208.31
+$ORIGIN icabox.com.mx.
+kwh-gallo		A	172.22.9.13
+			MX	1 smtp.kwh-gallo
+$ORIGIN kwh-gallo.icabox.com.mx.
+ftp			A	192.168.1.105
+mail			A	192.168.1.105
+pop3			A	192.168.1.105
+smtp			A	192.168.1.105
+webmail			A	192.168.1.105
+www			A	192.168.1.105
+$ORIGIN icabox.com.mx.
+kwh-morelia		A	187.134.244.120
+			MX	1 mail.kwh-morelia
+$ORIGIN kwh-morelia.icabox.com.mx.
+mail			A	189.168.12.175
+pop3			A	189.168.12.175
+smtp			A	189.168.12.175
+webmail			A	189.168.12.175
+webmail2		A	189.168.12.175
+www			A	189.168.12.175
+$ORIGIN icabox.com.mx.
+kwh-uruapan		A	172.22.9.22
+kwh-zamora		A	187.134.157.121
+$ORIGIN kwh-zamora.icabox.com.mx.
+mail			A	187.134.177.245
+pop3			A	187.134.177.245
+smtp			A	187.134.177.245
+webmail			A	187.134.177.245
+$ORIGIN icabox.com.mx.
+kwjalisco		A	187.133.11.62
+$ORIGIN kwjalisco.icabox.com.mx.
+mail			A	187.133.11.62
+pop3			A	187.133.11.62
+smtp			A	187.133.11.62
+webmail			A	187.133.11.62
+$ORIGIN icabox.com.mx.
+lior			A	201.151.179.34
+$ORIGIN lior.icabox.com.mx.
+mail			A	201.151.179.34
+pop3			A	201.151.179.34
+smtp			A	201.151.179.34
+webmail			A	201.151.179.34
+$ORIGIN icabox.com.mx.
+mail			A	172.22.10.242
+			A	200.76.101.23
+			A	201.151.179.124
+maver			A	172.22.10.248
+meeting			A	172.22.10.229
+mex			A	201.103.192.191
+			MX	1 mail.mex
+$ORIGIN mex.icabox.com.mx.
+mail			A	201.103.192.191
+pop3			A	201.103.192.191
+smtp			A	201.103.192.191
+webmail			A	201.103.192.191
+webmail2		A	201.103.192.191
+www			A	201.103.192.191
+$ORIGIN icabox.com.mx.
+new			A	201.151.148.38
+			MX	1 smtp.new
+$ORIGIN new.icabox.com.mx.
+ftp			A	187.133.110.61
+mail			A	201.151.148.38
+pop3			A	201.151.148.38
+smtp			A	201.151.148.38
+webmail			A	201.151.148.38
+webmail2		A	201.103.192.191
+www			A	187.133.110.61
+$ORIGIN icabox.com.mx.
+nice			A	172.22.10.221
+ns1			A	172.22.10.247
+ns2			A	172.22.10.245
+operacionmoda		A	172.17.0.247
+			MX	1 smtp.operacionmoda
+$ORIGIN operacionmoda.icabox.com.mx.
+ftp			A	172.17.0.247
+mail			A	172.17.0.247
+pop3			A	172.17.0.247
+smtp			A	172.17.0.247
+webmail			A	172.17.0.247
+www			A	172.17.0.247
+$ORIGIN icabox.com.mx.
+operacionmoda2		A	172.22.9.11
+piagui			A	172.22.10.233
+piagui-almacen		MX	1 mail.piagui-almacen
+piagui-mexico2		A	187.174.227.142
+$ORIGIN piagui-mexico2.icabox.com.mx.
+mail			A	187.174.227.142
+pop3			A	187.174.227.142
+smtp			A	187.174.227.142
+webmail			A	187.174.227.142
+$ORIGIN icabox.com.mx.
+sidel			A	187.237.94.100
+			MX	1 smtp.sidel
+$ORIGIN sidel.icabox.com.mx.
+ftp			A	187.237.94.99
+mail			A	187.237.94.99
+pop3			A	187.237.94.99
+smtp			A	187.237.94.99
+webmail			A	187.237.94.99
+www			A	187.237.94.99
+$ORIGIN icabox.com.mx.
+smtp			A	201.151.179.124
+surtidora		A	201.151.179.33
+$ORIGIN surtidora.icabox.com.mx.
+mail			A	201.151.179.33
+pop3			A	201.151.179.33
+smtp			A	201.151.179.33
+webmail			A	201.151.179.33
+$ORIGIN icabox.com.mx.
+surtidora-centro	A	172.22.9.12
+surtidora-centrosur	A	192.168.1.7
+			MX	1 smtp.surtidora-centrosur
+$ORIGIN surtidora-centrosur.icabox.com.mx.
+ftp			A	192.168.1.7
+mail			A	192.168.1.7
+pop3			A	192.168.1.7
+smtp			A	192.168.1.7
+webmail			A	192.168.1.7
+www			A	192.168.1.7
+$ORIGIN icabox.com.mx.
+surtidora-vallarta	A	187.210.103.210
+$ORIGIN surtidora-vallarta.icabox.com.mx.
+mail			A	187.210.103.210
+pop3			A	187.210.103.210
+smtp			A	187.210.103.210
+webmail			A	187.210.103.210
+$ORIGIN icabox.com.mx.
+tractocamiones		A	187.133.81.178
+tya			A	172.22.10.195

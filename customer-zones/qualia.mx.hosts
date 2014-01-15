@@ -1,0 +1,24 @@
+$TTL 86400	; 1 día
+qualia.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012001002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+qualia.mx.			IN	NS	ns1.gdlicanet.net.mx.
+qualia.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+qualia.mx.			IN	A	201.151.179.5
+www.qualia.mx.			IN	CNAME	qualia.mx.
+ftp.qualia.mx.			IN	A	201.151.179.5
+
+; Gestión del correo
+qualia.mx.			300	IN	MX	1 ASPMX.L.GOOGLE.COM.
+qualia.mx.                      300     IN      MX      5 ALT1.ASPMX.L.GOOGLE.COM.
+qualia.mx.                      300     IN      MX      5 ASPMX2.GOOGLEMAIL.COM.
+qualia.mx.                      300     IN      MX      5 ASPMX3.GOOGLEMAIL.COM.
+qualia.mx.			300	IN	TXT	google-site-verification=YUfFY2nWYTUYXxlmU5ka03PRFyr1EPs6qtbSusHuAxw

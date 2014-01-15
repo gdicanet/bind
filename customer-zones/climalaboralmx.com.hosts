@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+climalaboralmx.com.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000010 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+climalaboralmx.com.		IN	NS	ns1.gdlicanet.net.mx.
+climalaboralmx.com.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+climalaboralmx.com.			IN	A		201.151.179.5
+www.climalaboralmx.com.		IN	CNAME	climalaboralmx.com.
+ftp.climalaboralmx.com.		IN	A		201.151.179.5
+
+; Gestión del correo
+climalaboralmx.com.				IN	MX		10 smtp.climalaboralmx.com.
+mail.climalaboralmx.com.		IN	CNAME	smtp.climalaboralmx.com.
+smtp.climalaboralmx.com.		IN	A		201.151.179.5
+pop3.climalaboralmx.com.		IN	A		201.151.179.6
+pop.climalaboralmx.com.			IN	CNAME	pop3.climalaboralmx.com.
+imap.climalaboralmx.com.		IN	CNAME	pop3.climalaboralmx.com.
+webmail.climalaboralmx.com.		IN	A		201.151.179.5
+

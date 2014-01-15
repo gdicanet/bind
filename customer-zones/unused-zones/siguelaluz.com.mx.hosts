@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+siguelaluz.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100902 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.52.142.175
+			MX	1 mail.siguelaluz.com.mx.
+$ORIGIN siguelaluz.com.mx.
+ftp			A	200.52.142.175
+mail			A	200.52.142.175
+pop3			A	200.52.142.175
+smtp			A	200.52.142.175
+webmail			A	200.52.142.175
+webmail2		A	200.52.142.175
+www			A	200.52.142.175

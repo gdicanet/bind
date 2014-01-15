@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+intropacifico.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000010 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+intropacifico.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+intropacifico.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+intropacifico.com.mx.			IN	A		201.151.179.30
+www.intropacifico.com.mx.		IN	CNAME	intropacifico.com.mx.
+ftp.intropacifico.com.mx.		IN	A		201.151.179.30
+
+; Gestión del correo
+intropacifico.com.mx.				IN	MX		10 smtp.intropacifico.com.mx.
+mail.intropacifico.com.mx.			IN	CNAME	smtp.intropacifico.com.mx.
+smtp.intropacifico.com.mx.			IN	A		201.151.179.30
+pop3.intropacifico.com.mx.			IN	A		201.151.179.30
+pop.intropacifico.com.mx.			IN	CNAME	pop3.intropacifico.com.mx.
+imap.intropacifico.com.mx.			IN	CNAME	pop3.intropacifico.com.mx.
+webmail.intropacifico.com.mx.		IN	A		201.151.179.30
+

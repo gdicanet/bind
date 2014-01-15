@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+autoya.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000020 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+autoya.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+autoya.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+autoya.com.mx.		IN	A		201.151.179.10
+www.autoya.com.mx.	IN	CNAME	autoya.com.mx.
+
+; Correo electrónico gestionado por google.
+autoya.com.mx.			IN	MX	10 aspmx.l.google.com.
+autoya.com.mx.			IN	MX	20 alt1.aspmx.l.google.com.
+autoya.com.mx.			IN	MX	20 alt2.aspmx.l.google.com.
+autoya.com.mx.			IN	MX	30 aspmx2.googlemail.com.
+autoya.com.mx.			IN	MX	30 aspmx3.googlemail.com.
+autoya.com.mx.			IN	MX	30 aspmx4.googlemail.com.
+mail.autoya.com.mx.		IN	CNAME	ghs.google.com.
+

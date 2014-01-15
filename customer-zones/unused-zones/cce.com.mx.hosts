@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+cce.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100903 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	127.0.0.1
+			MX	1 mail.cce.com.mx.
+$ORIGIN cce.com.mx.
+ftp			A	127.0.0.1
+mail			A	127.0.0.1
+pop3			A	127.0.0.1
+smtp			A	127.0.0.1
+webmail			A	127.0.0.1
+webmail2		A	127.0.0.1
+www			A	127.0.0.1

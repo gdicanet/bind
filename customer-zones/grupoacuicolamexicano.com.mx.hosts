@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+grupoacuicolamexicano.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000010 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+grupoacuicolamexicano.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+grupoacuicolamexicano.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+grupoacuicolamexicano.com.mx.		IN	A		201.151.179.30
+www.grupoacuicolamexicano.com.mx.	IN	CNAME	grupoacuicolamexicano.com.mx.
+ftp.grupoacuicolamexicano.com.mx.	IN	A		201.151.179.30
+
+; Gestión del correo
+grupoacuicolamexicano.com.mx.			IN	MX		10 smtp.grupoacuicolamexicano.com.mx.
+mail.grupoacuicolamexicano.com.mx.		IN	CNAME	smtp.grupoacuicolamexicano.com.mx.
+smtp.grupoacuicolamexicano.com.mx.		IN	A		201.151.179.30
+pop3.grupoacuicolamexicano.com.mx.		IN	A		201.151.179.30
+pop.grupoacuicolamexicano.com.mx.		IN	CNAME	pop3.grupoacuicolamexicano.com.mx.
+imap.grupoacuicolamexicano.com.mx.		IN	CNAME	pop3.grupoacuicolamexicano.com.mx.
+webmail.grupoacuicolamexicano.com.mx.	IN	A		201.151.179.30
+

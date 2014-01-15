@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+elmejortinte.com.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+elmejortinte.com.		IN	NS	ns1.gdlicanet.net.mx.
+elmejortinte.com.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+elmejortinte.com.			IN	A		201.151.179.18
+www.elmejortinte.com.		IN	CNAME	elmejortinte.com.
+ftp.elmejortinte.com.		IN	A		201.151.179.18
+
+; Gestión del correo
+elmejortinte.com.				IN	MX		10 smtp.elmejortinte.com.
+mail.elmejortinte.com.			IN	CNAME	smtp.elmejortinte.com.
+smtp.elmejortinte.com.			IN	A		201.151.179.18
+pop3.elmejortinte.com.			IN	A		201.151.179.18
+pop.elmejortinte.com.			IN	CNAME	pop3.elmejortinte.com.
+imap.elmejortinte.com.			IN	CNAME	pop3.elmejortinte.com.
+webmail.elmejortinte.com.		IN	A		201.151.179.18
+

@@ -1,0 +1,43 @@
+acl "trusted" {
+    127.0.0.1;
+    10.1.1.0/24;
+    172.22.10.0/24;
+    201.151.179.0/25; // Nuevo rango de IPs
+};
+
+options {
+	directory "/var/cache/bind";
+
+	// If there is a firewall between you and nameservers you want
+	// to talk to, you may need to fix the firewall to allow multiple
+	// ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+	// If your ISP provided one or more IP addresses for stable 
+	// nameservers, you probably want to use them as forwarders.  
+	// Uncomment the following block, and insert the addresses replacing 
+	// the all-0's placeholder.
+
+	forwarders {
+	 	172.22.10.254;
+	};
+
+	auth-nxdomain no;    # conform to RFC1035
+	listen-on-v6 { trusted; };
+	allow-query { any; };
+	
+	// Recursión y querys a la cache sólo en nuestras IPs conocidas
+	allow-recursion { trusted; };
+	allow-query-cache { trusted; };
+	
+	// Permitir tranferencias a nuestro esclavo
+	// Fox (el 2) a veces va a transferir sus zonas tanto a luna como a falstaff
+	// Falstaff es esclavo de algunas zonas y maestro de otras
+	allow-transfer { 201.151.179.3; 201.151.179.7; };
+	
+	// Permitir notificaciones desde falstaff
+	// Falstaff es maestro de algunas zonas
+	allow-notify { 201.151.179.7; };
+	
+	// Redirigir las actualizaciones dinámicas a nuestro servidor maestros
+        allow-update-forwarding { any; };
+};

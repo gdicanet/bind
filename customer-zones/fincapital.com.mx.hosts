@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+fincapital.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2011000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+fincapital.com.mx.				IN	NS	ns1.gdlicanet.net.mx.
+fincapital.com.mx.				IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+fincapital.com.mx.				IN	A		201.151.179.5
+www.fincapital.com.mx.			IN	CNAME	fincapital.com.mx.
+ftp.fincapital.com.mx.			IN	A		201.151.179.5
+
+; Gestión del correo
+fincapital.com.mx.					IN	MX		10 smtp.fincapital.com.mx.
+mail.fincapital.com.mx.				IN	CNAME	smtp.fincapital.com.mx.
+smtp.fincapital.com.mx.				IN	A		201.151.179.5
+pop3.fincapital.com.mx.				IN	A		201.151.179.6
+pop.fincapital.com.mx.				IN	CNAME	pop3.fincapital.com.mx.
+imap.fincapital.com.mx.				IN	CNAME	pop3.fincapital.com.mx.
+webmail.fincapital.com.mx.			IN	A		201.151.179.5
+

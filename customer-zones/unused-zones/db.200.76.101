@@ -1,0 +1,28 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	localhost. root.localhost. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+32	IN	PTR	32.
+33	IN	PTR	mailserver.
+34	IN	PTR	antispam.
+35	IN	PTR	35.
+36	IN	PTR	36.
+37	IN	PTR	balanceadora.
+38	IN	PTR	voip.
+39	IN	PTR	voip.
+40	IN	PTR	voip.
+41	IN	PTR	voip.
+42	IN	PTR	voip.
+43	IN	PTR	maver.
+44	IN	PTR	voip.
+45	IN	PTR	45.
+46	IN	PTR	gateway.
+47	IN	PTR	broadcast.

@@ -1,0 +1,33 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+gpicomercial.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007101008 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.21
+			MX	1 mail.gpicomercial.com.mx.
+$ORIGIN gpicomercial.com.mx.
+ftp			A	201.151.179.21
+intranet		A	192.168.0.251
+mail			A	201.151.179.21
+mexico			A	172.22.9.23
+			MX	1 mail.mexico
+$ORIGIN mexico.gpicomercial.com.mx.
+mail			A	192.168.1.216
+pop3			A	192.168.1.216
+smtp			A	192.168.1.216
+webmail			A	192.168.1.216
+webmail2		A	189.135.6.23
+www			A	189.135.6.23
+$ORIGIN gpicomercial.com.mx.
+pop3			A	201.151.179.21
+smtp			A	201.151.179.21
+squidguard		A	201.151.179.21
+webmail			A	201.151.179.21
+webmail2		A	201.151.179.21
+www			A	201.151.179.21

@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+ecoazul.org.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+ecoazul.org.		IN	NS	ns1.gdlicanet.net.mx.
+ecoazul.org.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+ecoazul.org.			IN	A		201.151.179.18
+www.ecoazul.org.		IN	CNAME	ecoazul.org.
+ftp.ecoazul.org.		IN	A		201.151.179.18
+
+; Gestión del correo
+ecoazul.org.				IN	MX		10 smtp.ecoazul.org.
+mail.ecoazul.org.			IN	CNAME	smtp.ecoazul.org.
+smtp.ecoazul.org.			IN	A		201.151.179.18
+pop3.ecoazul.org.			IN	A		201.151.179.18
+pop.ecoazul.org.			IN	CNAME	pop3.ecoazul.org.
+imap.ecoazul.org.			IN	CNAME	pop3.ecoazul.org.
+webmail.ecoazul.org.		IN	A		201.151.179.18
+

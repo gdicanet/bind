@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+veroexports.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100904 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+$TTL 86400	; 1 day
+			A	204.92.106.2
+$TTL 300	; 5 minutes
+			MX	1 mail.veroexports.mx.
+$ORIGIN veroexports.mx.
+ftp			A	201.151.179.14
+mail			A	201.151.179.14
+pop3			A	201.151.179.14
+smtp			A	201.151.179.14
+webmail			A	201.151.179.14
+webmail2		A	201.151.179.14
+www			A	204.92.106.2

@@ -1,0 +1,27 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+piagui.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000037 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.20
+			MX	10 ASPMX.L.GOOGLE.COM.
+			MX	20 ALT1.ASPMX.L.GOOGLE.COM.
+			MX	30 ALT2.ASPMX.L.GOOGLE.COM.
+			MX	40 ASPMX2.GOOGLEMAIL.COM.
+			MX	50 ASPMX3.GOOGLEMAIL.COM.
+$ORIGIN piagui.mx.
+ftp			A	201.151.179.20
+mail			A	201.151.179.20
+pop3			A	201.151.179.20
+smtp			A	201.151.179.20
+webmail			A	201.151.179.20
+www			A	201.151.179.20
+bwdes                   A       201.151.179.20
+bwprod                  A       201.151.179.20
+tickets			A 	201.151.179.20

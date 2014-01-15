@@ -1,0 +1,20 @@
+$ORIGIN .
+$TTL 300
+empleosyservicios.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100903 ; serial
+				300
+				300
+				300
+				300 )
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.76.101.34
+			MX	1 mail.empleosyservicios.com.mx.
+$ORIGIN empleosyservicios.com.mx.
+ftp			A	200.76.101.34
+mail			A	200.76.101.34
+pop3			A	200.76.101.33
+smtp			A	200.76.101.33
+webmail			A	200.76.101.34
+webmail2		A	200.76.101.34
+www			A	200.76.101.34

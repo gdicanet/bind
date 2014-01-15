@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+lluviadeestrellas.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000015 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+lluviadeestrellas.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+lluviadeestrellas.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+lluviadeestrellas.com.mx. 300 IN A 201.151.179.5
+www.lluviadeestrellas.com.mx. 300 IN CNAME lluviadeestrellas.com.mx.
+ftp.lluviadeestrellas.com.mx. 300 IN A 201.151.179.5
+
+; Gestión del correo
+lluviadeestrellas.com.mx. 300 IN MX 10 smtp.lluviadeestrellas.com.mx.
+mail.lluviadeestrellas.com.mx. 300 IN CNAME smtp.lluviadeestrellas.com.mx.
+smtp.lluviadeestrellas.com.mx. 300 IN A 201.151.179.5
+pop3.lluviadeestrellas.com.mx. 300 IN A 201.151.179.6
+pop.lluviadeestrellas.com.mx. 300 IN CNAME pop3.lluviadeestrellas.com.mx.
+imap.lluviadeestrellas.com.mx. 300 IN CNAME pop3.lluviadeestrellas.com.mx.
+webmail.lluviadeestrellas.com.mx. 300 IN A 201.151.179.5

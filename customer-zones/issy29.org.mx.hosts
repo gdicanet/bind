@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+issy29.org.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100914 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	200.52.142.188
+			MX	1 mail.issy29.org.mx.
+$ORIGIN issy29.org.mx.
+ftp			A	200.52.142.188
+mail			A	200.52.142.188
+pop3			A	200.52.142.188
+smtp			A	200.52.142.188
+webmail			A	200.52.142.188
+webmail2		A	200.52.142.188
+www			A	200.52.142.188

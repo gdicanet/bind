@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+pivotpointmexico.com	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100907 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.18
+			MX	1 mail.pivotpointmexico.com.
+$ORIGIN pivotpointmexico.com.
+ftp			A	201.151.179.18
+mail			A	201.151.179.18
+pop3			A	201.151.179.18
+smtp			A	201.151.179.18
+webmail			A	201.151.179.18
+webmail2		A	201.151.179.18
+www			A	201.151.179.18

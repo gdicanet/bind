@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+hidraulica.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000011 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+hidraulica.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+hidraulica.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+hidraulica.com.mx.			IN	A		201.151.179.5
+www.hidraulica.com.mx.		IN	CNAME	hidraulica.com.mx.
+ftp.hidraulica.com.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+hidraulica.com.mx.				IN	MX		10 smtp.hidraulica.com.mx.
+mail.hidraulica.com.mx.			IN	CNAME	smtp.hidraulica.com.mx.
+smtp.hidraulica.com.mx.			IN	A		201.151.179.5
+pop3.hidraulica.com.mx.			IN	A		201.151.179.6
+pop.hidraulica.com.mx.			IN	CNAME	pop3.hidraulica.com.mx.
+imap.hidraulica.com.mx.			IN	CNAME	pop3.hidraulica.com.mx.
+webmail.hidraulica.com.mx.		IN	A		201.151.179.5
+

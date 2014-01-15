@@ -1,0 +1,23 @@
+$TTL 86400	; 1 día
+brabinentertaiment.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2010000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+brabinentertaiment.mx.		IN	NS	ns1.gdlicanet.net.mx.
+brabinentertaiment.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+brabinentertaiment.mx.		IN	A	201.151.179.21
+			MX	1 mail.brabinentertaiment.mx.
+$ORIGIN brabinentertaiment.mx.
+mail			A	201.151.179.21
+pop3			A	201.151.179.21
+smtp			A	201.151.179.21
+webmail			A	201.151.179.21
+webmail2		A	201.151.179.21
+www			A	201.151.179.21

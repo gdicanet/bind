@@ -1,0 +1,20 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+colima.jimenezautomotriz.com IN	SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100934 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			MX	1 mail.colima.jimenezautomotriz.com.
+$ORIGIN colima.jimenezautomotriz.com.
+ftp			A	200.76.101.34
+mail			A	189.164.4.12
+pop3			A	189.164.4.12
+smtp			A	189.164.4.12
+webmail			A	189.164.4.12
+webmail2		A	189.164.4.12
+www			A	189.164.4.12

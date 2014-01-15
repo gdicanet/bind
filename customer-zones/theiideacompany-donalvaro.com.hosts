@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+theiideacompany-donalvaro.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+theiideacompany-donalvaro.com.	IN	NS	ns1.gdlicanet.net.mx.
+theiideacompany-donalvaro.com.	IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+theiideacompany-donalvaro.com.	IN	A		201.151.179.24
+www.theiideacompany-donalvaro.com.	IN	CNAME	theiideacompany-donalvaro.com.
+theiideacompany-donalvaro.com.	IN	A		201.151.179.24
+
+; Gestión del correo
+theiideacompany-donalvaro.com.				IN	MX		10 smtp.theiideacompany-donalvaro.com.
+mail.theiideacompany-donalvaro.com.	IN	CNAME	smtp.theiideacompany-donalvaro.com.
+smtp.theiideacompany-donalvaro.com.	IN	A		201.151.179.24
+pop3.theiideacompany-donalvaro.com.	IN	A		201.151.179.24
+pop.theiideacompany-donalvaro.com.	IN	CNAME	pop3.iidea.com.mx.
+imap.theiideacompany-donalvaro.com.	IN	CNAME	pop3.iidea.com.mx.
+webmail.theiideacompany-donalvaro.com.	IN	A		201.151.179.24
+

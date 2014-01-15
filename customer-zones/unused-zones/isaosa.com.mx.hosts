@@ -1,0 +1,22 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+isaosa.com.mx		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100910 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	189.169.140.204
+			MX	1 mail.isaosa.com.mx.
+$ORIGIN isaosa.com.mx.
+ftp			A	200.76.101.34
+mail			A	200.76.101.34
+pop3			A	200.76.101.33
+prueba			A	10.1.1.1
+smtp			A	200.76.101.33
+webmail			A	200.76.101.34
+webmail2		A	200.76.101.34
+www			A	189.169.140.204

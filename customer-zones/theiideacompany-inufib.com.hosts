@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+theiideacompany-inufib.com IN SOA ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007100911 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.24
+			MX	1 mail.theiideacompany-inufib.com.
+$ORIGIN theiideacompany-inufib.com.
+ftp			A	200.76.101.34
+mail			A	201.151.179.24
+pop3			A	201.151.179.24
+smtp			A	201.151.179.24
+webmail			A	201.151.179.24
+webmail2		A	200.52.142.175
+www			A	201.151.179.24

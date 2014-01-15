@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+boxmart.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+boxmart.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+boxmart.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página Web
+boxmart.com.mx.			IN	A		201.151.179.17
+www.boxmart.com.mx.		IN	CNAME	boxmart.com.mx.
+ftp.boxmart.com.mx.		IN	A		201.151.179.17
+
+; Gestión del correo electrónico
+boxmart.com.mx.				IN	MX		10 smtp.boxmart.com.mx.
+mail.boxmart.com.mx.		IN	CNAME	smtp.boxmart.com.mx.
+smtp.boxmart.com.mx.		IN	A		201.151.179.17
+pop3.boxmart.com.mx.		IN	A		201.151.179.17
+pop.boxmart.com.mx.			IN	CNAME	pop3.boxmart.com.mx.
+imap.boxmart.com.mx.		IN	CNAME	pop3.boxmart.com.mx.
+webmail.boxmart.com.mx.		IN	A		201.151.179.17
+

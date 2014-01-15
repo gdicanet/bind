@@ -1,0 +1,52 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+gdlicanet.net.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000205 ; serial
+				43200      ; refresh (12 hours)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 weeks)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			NS	ns1.he.net.
+			A	201.151.179.5
+			MX	10 smtp.gdlicanet.net.mx.
+$ORIGIN gdlicanet.net.mx.
+ddns			A	201.151.179.2
+ddns2			A	201.151.179.3
+fox			A	201.151.179.2
+ftp			A	201.151.179.5
+gatuno			A	123.123.123.123
+gpibranch14		A	201.171.11.171
+$ORIGIN gpibranch14.gdlicanet.net.mx.
+mail			A	201.171.11.171
+pop3			A	201.171.11.171
+smtp			A	201.171.11.171
+webmail			A	201.171.11.171
+www			A	201.171.11.171
+$ORIGIN gdlicanet.net.mx.
+imap			CNAME	pop3
+kyo			A	201.151.179.2
+luna			A	201.151.179.3
+mail			CNAME	smtp
+mateo			A	201.151.179.3
+maxwell			A	201.151.179.4
+n2n			A	201.151.179.5
+			MX	10 mail.gpibranch14
+ns1			A	201.151.179.2
+ns2			A	201.151.179.3
+pop			CNAME	pop3
+pop3			A	201.151.179.4
+puppet			A	201.151.179.5
+roundcube		A	201.151.179.4
+smtp			A	201.151.179.4
+webmail			A	201.151.179.4
+www			CNAME	gdlicanet.net.mx.
+antispam		CNAME	gdlicanet.net.mx.
+
+gatuno.gdlicanet.net.mx.	MX	10	smtp.gatuno.gdlicanet.net.mx.
+smtp.gatuno.gdlicanet.net.mx.	A	172.22.10.184
+
+luna.gdlicanet.net.mx.		MX	10	smtp.luna.gdlicanet.net.mx.
+smtp.luna.gdlicanet.net.mx.	A	172.22.10.184

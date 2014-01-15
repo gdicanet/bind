@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+echancedemexico.com.mx.	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+; Gestión DNS
+echancedemexico.com.mx.		IN	NS	ns1.gdlicanet.net.mx.
+echancedemexico.com.mx.		IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+echancedemexico.com.mx.			IN	A		200.52.142.172
+www.echancedemexico.com.mx.		IN	CNAME	200.52.142.172
+ftp.echancedemexico.com.mx.		IN	A		200.52.142.172
+
+; Gestión del correo
+echancedemexico.com.mx.				IN	MX		10 smtp.echancedemexico.com.mx.
+mail.echancedemexico.com.mx.		IN	CNAME	smtp.echancedemexico.com.mx.
+smtp.echancedemexico.com.mx.		IN	A		200.52.142.172
+pop3.echancedemexico.com.mx.		IN	A		200.52.142.172
+pop.echancedemexico.com.mx.			IN	CNAME	pop3.echancedemexico.com.mx.
+imap.echancedemexico.com.mx.		IN	CNAME	pop3.echancedemexico.com.mx.
+webmail.echancedemexico.com.mx.		IN	A		200.52.142.172
+

@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+megagdl.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+megagdl.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+megagdl.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+megagdl.com.mx.			IN	A		201.151.179.22
+www.megagdl.com.mx.		IN	CNAME	megagdl.com.mx.
+ftp.megagdl.com.mx.		IN	A		201.151.179.22
+
+; Gestión del correo
+megagdl.com.mx.				IN	MX		10 smtp.megagdl.com.mx.
+mail.megagdl.com.mx.			IN	CNAME	smtp.megagdl.com.mx.
+smtp.megagdl.com.mx.			IN	A		201.151.179.22
+pop3.megagdl.com.mx.			IN	A		201.151.179.22
+pop.megagdl.com.mx.			IN	CNAME	pop3.megagdl.com.mx.
+imap.megagdl.com.mx.			IN	CNAME	pop3.megagdl.com.mx.
+webmail.megagdl.com.mx.		IN	A		201.151.179.22
+

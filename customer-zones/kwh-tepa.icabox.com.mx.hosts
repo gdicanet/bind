@@ -1,0 +1,21 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+kwh-tepa.icabox.com.mx	IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2007102587 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	172.22.9.27
+			MX	1 mail.kwh-tepa.icabox.com.mx.
+$ORIGIN kwh-tepa.icabox.com.mx.
+ftp			A	200.76.101.34
+mail			A	187.204.24.59
+pop3			A	187.204.24.59
+smtp			A	187.204.24.59
+webmail			A	187.204.24.59
+webmail2		A	187.204.24.59
+www			A	187.204.24.59

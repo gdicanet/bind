@@ -1,0 +1,26 @@
+$TTL 86400	; 1 día
+juliayrenata.com.		IN SOA	ns1.gdlicanet.net.mx. hostmaster.gdlicanet.net.mx. (
+				2012000002 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+juliayrenata.com.		IN	NS	ns1.gdlicanet.net.mx.
+juliayrenata.com.		IN	NS	ns2.gdlicanet.net.mx.
+
+; La parte web
+juliayrenata.com.		IN	A	201.151.179.18
+www.juliayrenata.com.		IN	CNAME	juliayrenata.com.
+ftp.juliayrenata.com.		IN	A	201.151.179.18
+
+; Correo
+juliayrenata.com.		IN	MX	10 smtp.juliayrenata.com.
+smtp.juliayrenata.com.		IN	A	201.151.179.18
+pop3.juliayrenata.com.		IN	A	201.151.179.18
+mail.juliayrenata.com.		IN	CNAME	smtp.juliayrenata.com.
+pop.juliayrenata.com.		IN	CNAME	pop3.juliayrenata.com.
+imap.juliayrenata.com.		IN	CNAME	pop3.juliayrenata.com.
+webmail.juliayrenata.com.	IN	A	201.151.179.18

@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+eudave.com.mx.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012000012 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+eudave.com.mx.			IN	NS	ns1.gdlicanet.net.mx.
+eudave.com.mx.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+eudave.com.mx.			IN	A		201.151.179.5
+www.eudave.com.mx.		IN	CNAME	eudave.com.mx.
+ftp.eudave.com.mx.		IN	A		201.151.179.5
+
+; Gestión del correo
+eudave.com.mx.				IN	MX		10 smtp.eudave.com.mx.
+mail.eudave.com.mx.			IN	CNAME	smtp.eudave.com.mx.
+smtp.eudave.com.mx.			IN	A		201.151.179.5
+pop3.eudave.com.mx.			IN	A		201.151.179.6
+pop.eudave.com.mx.			IN	CNAME	pop3.eudave.com.mx.
+imap.eudave.com.mx.			IN	CNAME	pop3.eudave.com.mx.
+webmail.eudave.com.mx.		IN	A		201.151.179.15
+

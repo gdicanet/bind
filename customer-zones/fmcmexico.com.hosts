@@ -1,0 +1,522 @@
+$ORIGIN .
+$TTL 300	; 5 minutes
+fmcmexico.com		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2012002485 ; serial
+				300        ; refresh (5 minutes)
+				300        ; retry (5 minutes)
+				300        ; expire (5 minutes)
+				300        ; minimum (5 minutes)
+				)
+			NS	ns1.gdlicanet.net.mx.
+			NS	ns2.gdlicanet.net.mx.
+			A	201.151.179.5
+			MX	10 smtp.fmcmexico.com.
+$ORIGIN fmcmexico.com.
+acapulco		A	187.141.38.210
+			MX	1 mail.acapulco
+$ORIGIN acapulco.fmcmexico.com.
+mail			A	187.141.38.210
+pop3			A	187.141.38.210
+smtp			A	187.141.38.210
+webmail			A	187.141.38.210
+webmail2		A	187.198.134.42
+www			A	187.198.134.42
+$ORIGIN fmcmexico.com.
+ags			A	10.1.1.199
+			MX	1 mail.ags
+$ORIGIN ags.fmcmexico.com.
+mail			A	10.1.1.199
+pop3			A	10.1.1.199
+smtp			A	10.1.1.199
+webmail			A	10.1.1.199
+$ORIGIN fmcmexico.com.
+ags2			A	187.237.159.2
+ags3			A	172.22.9.20
+			MX	1 smtp.ags3
+			TXT	"Raiz web actualizada por ags3.fmcmexico.com"
+$ORIGIN ags3.fmcmexico.com.
+ftp			A	192.168.1.66
+			TXT	"Ftp actualizado por ags3.fmcmexico.com"
+mail			A	192.168.1.66
+			TXT	"Correo actualizado por ags3.fmcmexico.com"
+pop3			A	192.168.1.66
+smtp			A	192.168.1.66
+webmail			A	192.168.1.66
+www			A	192.168.1.66
+$ORIGIN fmcmexico.com.
+aguascalientes		A	187.142.193.25
+			MX	1 mail.aguascalientes
+$ORIGIN aguascalientes.fmcmexico.com.
+mail			A	187.142.193.25
+pop3			A	187.142.193.25
+smtp			A	187.142.193.25
+webmail			A	187.142.193.25
+webmail2		A	187.142.193.25
+www			A	187.142.193.25
+$ORIGIN fmcmexico.com.
+aragon			A	172.22.9.18
+			MX	1 smtp.aragon
+$ORIGIN aragon.fmcmexico.com.
+ftp			A	172.30.3.64
+mail			A	172.30.3.64
+pop3			A	172.30.3.64
+smtp			A	172.30.3.64
+webmail			A	172.30.3.64
+webmail2		A	187.195.37.222
+www			A	172.30.3.64
+$ORIGIN fmcmexico.com.
+branch01		A	201.151.159.38
+$ORIGIN branch01.fmcmexico.com.
+mail			A	201.151.159.38
+pop3			A	201.151.159.38
+smtp			A	201.151.159.38
+webmail			A	201.151.159.38
+$ORIGIN fmcmexico.com.
+branch19		A	187.198.115.198
+			MX	1 mail.branch19
+$ORIGIN branch19.fmcmexico.com.
+mail			A	187.198.115.198
+pop3			A	187.198.115.198
+smtp			A	187.198.115.198
+webmail			A	187.198.115.198
+webmail2		A	187.198.115.198
+www			A	187.198.115.198
+$ORIGIN fmcmexico.com.
+branch20		A	187.142.193.25
+			MX	1 mail.branch20
+$ORIGIN branch20.fmcmexico.com.
+mail			A	187.142.193.25
+pop3			A	187.142.193.25
+smtp			A	187.142.193.25
+webmail			A	187.142.193.25
+webmail2		A	187.142.193.25
+www			A	187.142.193.25
+$ORIGIN fmcmexico.com.
+branch21		A	189.144.88.172
+			MX	1 mail.branch21
+$ORIGIN branch21.fmcmexico.com.
+ftp			A	189.191.171.145
+mail			A	189.144.88.172
+pop3			A	189.144.88.172
+smtp			A	189.144.88.172
+webmail			A	189.144.88.172
+webmail2		A	189.144.88.172
+www			A	189.144.88.172
+$ORIGIN fmcmexico.com.
+branch22		A	189.169.164.235
+			MX	1 mail.branch22
+$ORIGIN branch22.fmcmexico.com.
+mail			A	189.169.164.235
+pop3			A	189.169.164.235
+smtp			A	189.169.164.235
+webmail			A	189.169.164.235
+webmail2		A	189.169.164.235
+www			A	189.169.164.235
+$ORIGIN fmcmexico.com.
+branch23		A	187.134.128.21
+			MX	1 mail.branch23
+$ORIGIN branch23.fmcmexico.com.
+mail			A	187.134.128.21
+pop3			A	187.134.128.21
+smtp			A	187.134.128.21
+webmail			A	187.134.128.21
+webmail2		A	187.134.128.21
+www			A	187.134.128.21
+$ORIGIN fmcmexico.com.
+branch24		A	189.144.150.207
+			MX	1 mail.branch24
+$ORIGIN branch24.fmcmexico.com.
+mail			A	189.144.150.207
+pop3			A	189.144.150.207
+smtp			A	189.144.150.207
+webmail			A	189.144.150.207
+webmail2		A	189.144.150.207
+www			A	189.144.150.207
+$ORIGIN fmcmexico.com.
+branch25		MX	1 mail.branch25
+branch26		A	187.133.131.11
+			MX	1 mail.branch26
+$ORIGIN branch26.fmcmexico.com.
+ftp			A	187.133.112.58
+mail			A	187.133.131.11
+pop3			A	187.133.131.11
+smtp			A	187.133.131.11
+webmail			A	187.133.131.11
+webmail2		A	187.133.131.11
+www			A	187.133.131.11
+$ORIGIN fmcmexico.com.
+branch27		A	189.131.77.2
+			MX	1 mail.branch27
+$ORIGIN branch27.fmcmexico.com.
+mail			A	189.131.77.2
+pop3			A	189.131.77.2
+smtp			A	189.131.77.2
+webmail			A	189.131.77.2
+webmail2		A	189.131.77.2
+www			A	189.131.77.2
+$ORIGIN fmcmexico.com.
+branchi24		A	189.147.60.126
+			MX	1 mail.branchi24
+$ORIGIN branchi24.fmcmexico.com.
+ftp			A	189.147.60.126
+mail			A	189.147.60.126
+pop3			A	189.147.60.126
+smtp			A	189.147.60.126
+webmail			A	189.147.60.126
+webmail2		A	189.147.60.126
+www			A	189.147.60.126
+$ORIGIN fmcmexico.com.
+central2		A	187.133.122.208
+			MX	1 mail.central2
+$ORIGIN central2.fmcmexico.com.
+mail			A	187.133.122.208
+pop3			A	187.133.122.208
+smtp			A	187.133.122.208
+webmail			A	187.133.122.208
+webmail2		A	187.133.122.208
+www			A	187.133.122.208
+$ORIGIN fmcmexico.com.
+clinica-alemania	A	189.254.232.162
+			MX	1 smtp.clinica-alemania
+$ORIGIN clinica-alemania.fmcmexico.com.
+ftp			A	189.254.232.162
+mail			A	189.254.232.162
+pop3			A	189.254.232.162
+smtp			A	189.254.232.162
+webmail			A	189.254.232.162
+webmail2		A	192.168.1.65
+www			A	189.254.232.162
+$ORIGIN fmcmexico.com.
+clinica-hidalgo		A	187.237.80.2
+			MX	1 mail.clinica-hidalgo
+$ORIGIN clinica-hidalgo.fmcmexico.com.
+mail			A	189.169.211.224
+pop3			A	189.169.211.224
+smtp			A	189.169.211.224
+webmail			A	189.169.211.224
+webmail2		A	189.169.210.44
+www			A	189.169.215.156
+$ORIGIN fmcmexico.com.
+clinica-madero		A	201.144.0.66
+cuautla			A	187.237.47.194
+			MX	1 mail.cuautla
+cuernavaca		A	187.237.20.82
+			MX	1 mail.cuernavaca
+$ORIGIN cuernavaca.fmcmexico.com.
+mail			A	189.138.232.159
+pop3			A	189.138.232.159
+smtp			A	189.138.232.159
+webmail			A	189.138.232.159
+webmail2		A	189.138.232.159
+www			A	189.138.232.159
+$ORIGIN fmcmexico.com.
+dalinde			A	187.210.39.194
+			MX	1 mail.dalinde
+$ORIGIN dalinde.fmcmexico.com.
+mail			A	189.242.207.219
+pop3			A	189.242.207.219
+smtp			A	189.242.207.219
+webmail			A	189.242.207.219
+webmail2		A	189.145.218.180
+www			A	189.145.218.180
+$ORIGIN fmcmexico.com.
+damas			A	201.151.179.12
+			MX	1 mail.damas
+$ORIGIN damas.fmcmexico.com.
+mail			A	201.151.179.12
+pop3			A	201.151.179.12
+smtp			A	201.151.179.12
+webmail			A	201.151.179.12
+webmail2		A	189.230.191.9
+www			A	189.230.191.9
+$ORIGIN fmcmexico.com.
+damas1			A	148.244.124.210
+			MX	1 mail.damas1
+$ORIGIN damas1.fmcmexico.com.
+mail			A	148.244.124.210
+pop3			A	148.244.124.210
+smtp			A	148.244.124.210
+webmail			A	148.244.124.210
+webmail2		A	148.244.124.210
+www			A	148.244.124.210
+$ORIGIN fmcmexico.com.
+dante			A	189.140.65.201
+			MX	1 mail.dante
+$ORIGIN dante.fmcmexico.com.
+mail			A	189.140.65.201
+pop3			A	189.140.65.201
+smtp			A	189.140.65.201
+webmail			A	189.140.65.201
+webmail2		A	189.140.65.201
+www			A	189.140.65.201
+$ORIGIN fmcmexico.com.
+durango			A	187.174.74.194
+			MX	1 mail.durango
+$ORIGIN durango.fmcmexico.com.
+mail			A	189.137.198.127
+pop3			A	189.137.198.127
+smtp			A	189.137.198.127
+webmail			A	189.137.198.127
+webmail2		A	189.137.198.127
+www			A	189.137.198.127
+$ORIGIN fmcmexico.com.
+ftp			A	201.151.179.5
+gdl			A	201.151.159.38
+			MX	1 mail.gdl
+$ORIGIN gdl.fmcmexico.com.
+mail			A	201.151.159.38
+pop3			A	201.151.159.38
+smtp			A	201.151.159.38
+webmail			A	201.151.159.38
+webmail2		A	201.151.159.38
+www			A	201.151.159.38
+$ORIGIN fmcmexico.com.
+gdl1			A	189.169.205.14
+			MX	1 mail.gdl1
+$ORIGIN gdl1.fmcmexico.com.
+mail			A	189.169.205.14
+pop3			A	189.169.205.14
+smtp			A	189.169.205.14
+webmail			A	189.169.205.14
+webmail2		A	189.169.205.14
+www			A	189.169.205.14
+$ORIGIN fmcmexico.com.
+gdl2			A	187.133.122.208
+			MX	1 mail.gdl2
+$ORIGIN gdl2.fmcmexico.com.
+mail			A	187.133.122.208
+pop3			A	187.133.122.208
+smtp			A	187.133.122.208
+webmail			A	187.133.122.208
+webmail2		A	187.133.122.208
+www			A	187.133.122.208
+$ORIGIN fmcmexico.com.
+guadalupe		A	187.142.163.17
+			MX	1 mail.guadalupe
+$ORIGIN guadalupe.fmcmexico.com.
+mail			A	187.142.163.17
+pop3			A	187.142.163.17
+smtp			A	187.142.163.17
+webmail			A	187.142.163.17
+webmail2		A	187.142.163.17
+www			A	187.142.163.17
+$ORIGIN fmcmexico.com.
+imap			CNAME	pop3
+jojutla			A	187.237.37.242
+			MX	1 mail.jojutla
+$ORIGIN jojutla.fmcmexico.com.
+mail			A	189.226.42.64
+pop3			A	189.226.42.64
+smtp			A	189.226.42.64
+webmail			A	189.226.42.64
+webmail2		A	189.138.162.32
+www			A	189.138.161.125
+$ORIGIN fmcmexico.com.
+kwh-uruapan		A	192.168.1.75
+			MX	1 smtp.kwh-uruapan
+			TXT	"Raiz web actualizada por kwh-uruapan.icabox.com.mx"
+$ORIGIN kwh-uruapan.fmcmexico.com.
+ftp			A	192.168.1.75
+			TXT	"Ftp actualizado por kwh-uruapan.icabox.com.mx"
+mail			A	192.168.1.75
+			TXT	"Correo actualizado por kwh-uruapan.icabox.com.mx"
+pop3			A	192.168.1.75
+smtp			A	192.168.1.75
+webmail			A	192.168.1.75
+www			A	192.168.1.75
+$ORIGIN fmcmexico.com.
+leon			A	189.254.232.82
+			MX	1 smtp.leon
+$ORIGIN leon.fmcmexico.com.
+ftp			A	192.168.1.178
+mail			A	192.168.1.178
+pop3			A	192.168.1.178
+smtp			A	192.168.1.178
+webmail			A	192.168.1.178
+webmail2		A	189.167.225.174
+www			A	192.168.1.178
+$ORIGIN fmcmexico.com.
+mail			CNAME	smtp
+medicasur		A	187.237.234.66
+			MX	1 smtp.medicasur
+$ORIGIN medicasur.fmcmexico.com.
+ftp			A	187.233.190.23
+mail			A	187.233.190.23
+pop3			A	187.233.190.23
+smtp			A	187.233.190.23
+webmail			A	187.233.190.23
+webmail2		A	189.136.189.190
+www			A	187.233.190.23
+$ORIGIN fmcmexico.com.
+morelia			A	187.174.162.2
+			MX	1 mail.morelia
+$ORIGIN morelia.fmcmexico.com.
+mail			A	187.193.123.157
+pop3			A	187.193.123.157
+smtp			A	187.193.123.157
+webmail			A	187.193.123.157
+webmail2		A	187.134.239.181
+www			A	187.134.242.44
+$ORIGIN fmcmexico.com.
+mty			A	187.156.40.160
+			MX	1 mail.mty
+$ORIGIN mty.fmcmexico.com.
+mail			A	187.156.40.160
+pop3			A	187.156.40.160
+smtp			A	187.156.40.160
+webmail			A	187.156.40.160
+webmail2		A	187.156.40.160
+www			A	187.156.40.160
+$ORIGIN fmcmexico.com.
+new			A	187.133.117.35
+			MX	1 mail.new
+$ORIGIN new.fmcmexico.com.
+mail			A	187.133.117.35
+pop3			A	187.133.117.35
+smtp			A	187.133.117.35
+webmail			A	187.133.117.35
+webmail2		A	187.133.117.35
+www			A	187.133.117.35
+$ORIGIN fmcmexico.com.
+nueva			A	200.52.142.184
+			MX	1 mail.nueva
+$ORIGIN nueva.fmcmexico.com.
+mail			A	200.52.142.184
+pop3			A	200.52.142.184
+smtp			A	200.52.142.184
+webmail			A	200.52.142.184
+webmail2		A	200.52.142.184
+www			A	200.52.142.184
+$ORIGIN fmcmexico.com.
+ometusco		A	189.141.58.53
+			MX	1 mail.ometusco
+$ORIGIN ometusco.fmcmexico.com.
+mail			A	189.141.58.53
+pop3			A	189.141.58.53
+smtp			A	189.141.58.53
+webmail			A	189.141.58.53
+webmail2		A	189.141.58.53
+www			A	189.141.58.53
+$ORIGIN fmcmexico.com.
+papagayo		A	172.22.9.17
+			MX	1 smtp.papagayo
+$ORIGIN papagayo.fmcmexico.com.
+ftp			A	192.168.1.102
+mail			A	192.168.1.102
+pop3			A	192.168.1.102
+smtp			A	192.168.1.102
+webmail			A	192.168.1.102
+webmail2		A	187.198.35.225
+www			A	192.168.1.102
+$ORIGIN fmcmexico.com.
+pedidos			A	187.133.123.251
+			MX	1 smtp.pedidos
+$ORIGIN pedidos.fmcmexico.com.
+ftp			A	187.133.139.133
+mail			A	187.133.139.133
+pop3			A	187.133.139.133
+smtp			A	187.133.139.133
+webmail			A	187.133.139.133
+webmail2		A	187.133.124.188
+www			A	187.133.139.133
+$ORIGIN fmcmexico.com.
+pop			CNAME	pop3
+pop3			A	201.151.179.6
+proveedores		A	187.133.139.133
+			MX	1 smtp.proveedores
+$ORIGIN proveedores.fmcmexico.com.
+ftp			A	187.133.139.133
+mail			A	187.133.139.133
+pop3			A	187.133.139.133
+smtp			A	187.133.139.133
+webmail			A	187.133.139.133
+www			A	187.133.139.133
+$ORIGIN fmcmexico.com.
+puebla			A	189.128.35.99
+			MX	1 mail.puebla
+$ORIGIN puebla.fmcmexico.com.
+mail			A	189.128.35.99
+pop3			A	189.128.35.99
+smtp			A	189.128.35.99
+webmail			A	189.128.35.99
+webmail2		A	189.128.35.99
+www			A	189.128.35.99
+$ORIGIN fmcmexico.com.
+puebla1			A	187.202.216.219
+			MX	1 mail.puebla1
+$ORIGIN puebla1.fmcmexico.com.
+mail			A	187.202.216.219
+pop3			A	187.202.216.219
+smtp			A	187.202.216.219
+webmail			A	187.202.216.219
+webmail2		A	187.135.75.203
+www			A	187.135.75.203
+$ORIGIN fmcmexico.com.
+puebla2			A	187.237.100.98
+			MX	1 mail.puebla2
+$ORIGIN puebla2.fmcmexico.com.
+mail			A	172.30.3.56
+pop3			A	172.30.3.56
+smtp			A	172.30.3.56
+webmail			A	172.30.3.56
+$ORIGIN fmcmexico.com.
+refugio			A	187.210.190.226
+			MX	1 mail.refugio
+$ORIGIN refugio.fmcmexico.com.
+mail			A	187.210.190.226
+pop3			A	187.210.190.226
+smtp			A	187.210.190.226
+webmail			A	187.210.190.226
+webmail2		A	187.210.190.226
+www			A	187.210.190.226
+$ORIGIN fmcmexico.com.
+sanrafael		A	172.22.9.21
+			MX	1 mail.sanrafael
+$ORIGIN sanrafael.fmcmexico.com.
+mail			A	189.191.155.228
+pop3			A	189.191.155.228
+smtp			A	189.191.155.228
+webmail			A	189.191.155.228
+webmail2		A	189.191.155.228
+www			A	189.191.155.228
+$ORIGIN fmcmexico.com.
+santafe			A	189.138.251.135
+			MX	1 mail.santafe
+$ORIGIN santafe.fmcmexico.com.
+mail			A	189.138.251.135
+pop3			A	189.138.251.135
+smtp			A	189.138.251.135
+webmail			A	189.138.251.135
+webmail2		A	189.138.251.135
+www			A	189.138.251.135
+$ORIGIN fmcmexico.com.
+smtp			A	201.151.179.5
+torremural		A	200.66.77.211
+$ORIGIN torremural.fmcmexico.com.
+mail			A	200.66.77.211
+pop3			A	200.66.77.211
+smtp			A	200.66.77.211
+webmail			A	200.66.77.211
+$ORIGIN fmcmexico.com.
+tultitlan		A	189.241.61.108
+			MX	1 mail.tultitlan
+$ORIGIN tultitlan.fmcmexico.com.
+mail			A	189.241.61.108
+pop3			A	189.241.61.108
+smtp			A	189.241.61.108
+webmail			A	189.241.61.108
+webmail2		A	189.241.61.108
+www			A	189.241.61.108
+$ORIGIN fmcmexico.com.
+tuxpan			A	189.242.228.13
+			MX	1 mail.tuxpan
+$ORIGIN tuxpan.fmcmexico.com.
+mail			A	189.242.228.13
+pop3			A	189.242.228.13
+smtp			A	189.242.228.13
+webmail			A	189.242.228.13
+webmail2		A	189.233.175.239
+www			A	189.233.175.239
+$ORIGIN fmcmexico.com.
+webmail			A	201.151.179.5
+www			CNAME	fmcmexico.com.

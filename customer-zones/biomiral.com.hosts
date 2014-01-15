@@ -1,0 +1,27 @@
+$TTL 86400	; 1 día
+biomiral.com.		IN SOA	ns1.gdlicanet.net.mx. postmaster.gdlicanet.net.mx. (
+				2013001001 ; serial
+				43200      ; refresh (12 horas)
+				900        ; retry (15 minutes)
+				1209600    ; expire (2 semanas)
+				300        ; minimum (5 minutes)
+				)
+
+; Gestión DNS
+biomiral.com.			IN	NS	ns1.gdlicanet.net.mx.
+biomiral.com.			IN	NS	ns2.gdlicanet.net.mx.
+
+; Página web
+biomiral.com.			IN	A		201.151.179.5
+www.biomiral.com.		IN	CNAME	biomiral.com.
+ftp.biomiral.com.		IN	A		201.151.179.5
+
+; Gestión del correo
+biomiral.com.			300	IN	MX		10 smtp.biomiral.com.
+mail.biomiral.com.			IN	CNAME	smtp.biomiral.com.
+smtp.biomiral.com.			300     IN	A		201.151.179.5
+pop3.biomiral.com.			300	IN	A		201.151.179.6
+pop.biomiral.com.			IN	CNAME	pop3.biomiral.com.
+imap.biomiral.com.			IN	CNAME	pop3.biomiral.com.
+webmail.biomiral.com. 		300	IN	A		201.151.179.5
+roundcube.biomiral.com.		IN	A		201.151.179.5
